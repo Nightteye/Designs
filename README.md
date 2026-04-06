@@ -99,5 +99,6 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDeri
 
 - **Have fun with it!** I hope this guide helps you on your coding journey and inspires you to create amazing projects. Happy coding!
 
----
-**Nighteye** | ![Sleep](https://img.shields.io/badge/Sleep-Deprived-black?style=flat-square&logo=coffee) ![Back](https://img.shields.io/badge/Back-Pained-red?style=flat-square)
+<p align="center">
+  Made with ☕ sleep deprivation and 🩹 back pain by <b>Nighteye</b>
+</p>
