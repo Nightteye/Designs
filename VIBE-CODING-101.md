@@ -145,6 +145,7 @@ export default defineConfig({
 ---
 
 ## Building your website
+---
 > Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context: [Persona Prompt](Prompt-Library/Website-Builder/Persona-Prompt.md)
 
 ### 1. Hero Section
@@ -152,10 +153,44 @@ export default defineConfig({
 
 - Don't not hold yourself for Hero Section. Add animations, micro-interactions, and make it as attractive as possible. This is the first thing that the user will see when they visit your website, so make sure to make a good impression.
 
-- You can look the prompt is used to build the Hero Section here: [Hero Section Prompt](Prompt-Library/nowhere-fast-prompt.md#1.Hero-Section)
+- You can look the prompt is used to build the Hero Section here: [Hero Section Prompt](nowhere-fast-prompt.md#1-hero-section)
 
+---
 
+### 2. Navbar
+- **NEVER** use a traditional navbar, try to be creative and original with your navbar design. You can use a hamburger menu, a sidebar, a bottom navigation, or any other creative way to navigate through your website. The navbar should be easy to use and should not take up too much space on the screen.
 
+- You can also add some animations and micro-interactions to make it more engaging. For example, you can add a hover effect to the navbar items, or you can add a sliding animation when the user clicks on the hamburger menu.
+
+- **DO NOT** add too many items in the navbar, keep it minimal and to the point. The navbar should only contain the most important links that the user needs to navigate through your website. Rest can go to the footer, which will be discussed as we go further in the guide.
+
+- *I don't have a prompt for the navbar, for this website*. You can just ask any AI tool to generate a navbar, it's one of the most simple task for an AI tool, and you can easily customize it to fit your design and vibe.
+
+---
+
+### 3. About Section
+- This section should be simple and straightforward, it should give the user an idea about who you are and what you do. You can also add some animations and micro-interactions to make it more engaging.
+
+- I personally like to have a dedicated page for 'About Page' and link it from the homepage, I just add a very brief about in the homepage and then link it to the about page where I go in depth about the story and the journey.
+
+- Never clutter this section with too much information, keep it precise and to the point. If you're building the website for a company or a brand, you can add a timeline of the company's history and milestones in this section. This will give the user a better understanding of the company's journey and achievements. But keep this section in middle or at the end of the website, never put it at the top, because the user will not be interested in reading about you before they know what you have to offer.
+
+- You can look the prompt is used to build the About Section here: [About Section Prompt](nowhere-fast-prompt.md#2-about-section)
+
+---
+
+### 4. Footer 
+- The footer is the last thing that the user will see when they scroll down to the bottom of your website, so make sure to make a good impression with your footer design. You can add some animations and micro-interactions to make it more engaging. For example, you can add a hover effect to the social media icons, or you can add a sliding animation when the user clicks on the subscribe button.
+
+- The footer should contain the most important links that the user needs to navigate through your website, such as the contact information, social media links, and legal information. You can also add a newsletter subscription form in the footer to collect email addresses from your visitors. This will help you to build a mailing list and keep your audience updated with your latest content and news.
+
+- I prefer big footers with a lot of information and links, but you can also go for a minimal footer if it fits your design and vibe. Just make sure to include all the important information and links that the user needs to navigate through your website. If you want to add a big footer, make sure to give proper spacing and layout to the footer content, so that it does not look cluttered and overwhelming for the user. You can also add some animations and micro-interactions to make it more engaging. For example, you can add a hover effect to the social media icons, or you can add a sliding animation when the user clicks on the subscribe button.
+
+- You can look the prompt is used to build the Footer Section here: [Footer Section Prompt](nowhere-fast-prompt.md#5-footer)
+
+---
+
+## Planning Folder Structure 
 
 
 > Always keep the folder structure organized and clean. This will help you and others understand the code better and make it easier to maintain and update in the future. You can create separate folders for components, styles, assets, etc. to keep everything organized. 
