@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Cartographer | Master the Craft</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#fcd800",
+                    "background": "#f9f5ff",
+                    "inverse-on-surface": "#9d98c6",
+                    "inverse-primary": "#7886ff",
+                    "secondary-dim": "#00576c",
+                    "on-primary-container": "#000d79",
+                    "surface-bright": "#f9f5ff",
+                    "secondary-fixed-dim": "#37d4ff",
+                    "secondary-container": "#80deff",
+                    "error-container": "#f74b6d",
+                    "tertiary-fixed-dim": "#eccb00",
+                    "error-dim": "#a70138",
+                    "primary-fixed-dim": "#7b89ff",
+                    "on-error-container": "#510017",
+                    "on-tertiary-fixed": "#443900",
+                    "on-tertiary": "#fff2c8",
+                    "on-tertiary-container": "#5a4c00",
+                    "surface-tint": "#2f42eb",
+                    "secondary": "#00647b",
+                    "on-surface": "#2e2a50",
+                    "on-primary-fixed-variant": "#001293",
+                    "on-secondary-fixed": "#003a48",
+                    "surface-container-low": "#f3eeff",
+                    "surface-container-highest": "#ded8ff",
+                    "surface-container-high": "#e4dfff",
+                    "tertiary-fixed": "#fcd800",
+                    "on-secondary-fixed-variant": "#00586d",
+                    "error": "#b41340",
+                    "surface-variant": "#ded8ff",
+                    "tertiary": "#6b5b00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed": "#000000",
+                    "on-tertiary-fixed-variant": "#655500",
+                    "on-error": "#ffefef",
+                    "surface": "#f9f5ff",
+                    "surface-container": "#eae5ff",
+                    "surface-dim": "#d5cfff",
+                    "primary-dim": "#1d32e0",
+                    "on-secondary-container": "#004e61",
+                    "outline": "#77729d",
+                    "primary-fixed": "#8d98ff",
+                    "outline-variant": "#aea8d7",
+                    "secondary-fixed": "#80deff",
+                    "primary-container": "#8d98ff",
+                    "on-secondary": "#e2f6ff",
+                    "on-background": "#2e2a50",
+                    "tertiary-dim": "#5d4f00",
+                    "on-surface-variant": "#5b5780",
+                    "on-primary": "#f3f1ff",
+                    "inverse-surface": "#0d072e",
+                    "primary": "#2f42eb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body": [
+                            "Manrope"
+                    ],
+                    "label": [
+                            "Manrope"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Progress Ribbon -->
+<div class="fixed top-0 left-0 w-full h-1 bg-primary-container z-[60]">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+<!-- TopNavBar -->
+<header class="w-full top-0 z-50 bg-[#f9f5ff] dark:bg-[#1a182e]">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="text-2xl font-extrabold tracking-tighter text-[#2e2a50] dark:text-[#eae5ff]">
+                The Cartographer
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-colors duration-200" href="#">What's inside</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-colors duration-200" href="#">Who it's for</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-colors duration-200" href="#">Guides</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold text-sm tracking-tight text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-colors duration-200" href="#">Resources</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 font-headline font-bold text-sm rounded-lg scale-95 active:duration-100 transition-transform">
+                Get Started
+            </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32 bg-background">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<div class="inline-block bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-sm text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
+                        The 2024 Design Guide
+                    </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8">
+                        Master the Craft of <span class="text-primary">Modern Cartography</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10 font-medium">
+                        Navigate the complexities of high-end editorial design with a guide built for precision, vibrancy, and intentional asymmetry.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-headline font-bold text-base flex items-center justify-center gap-2 hover:bg-primary-dim transition-colors">
+                            Get the Guide
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="bg-surface-container text-on-surface px-8 py-4 rounded-lg font-headline font-bold text-base hover:bg-surface-container-high transition-colors">
+                            View Roadmap
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container rounded-full absolute -top-12 -right-12 w-full h-full -z-0"></div>
+<div class="relative z-10 bg-surface-container-highest p-4 rounded-xl transform rotate-3">
+<img alt="Flat design vector illustration" class="w-full h-auto rounded-lg" data-alt="clean flat design vector illustration of a stylized explorer holding a compass over a vibrant blue and lavender abstract map" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6jeiy7XJgbFBDTMdpKDrNPjbD53WN6R18Cp2H57kDyybqRbaPIPn6SsWPTe7tEdZUIi4yk0UvmcwQUPclXwSpJzu19mL-WCuKq--N8V7L_oGvTmX2pi7hFXx3imZ9SY0ZRP5BcMv8OQqWKcCNT2Vsjtijv6VNFs74gV2fHCR8VmchId7UgPZLA__Yp_jYTExh2_7bQ_jo6l0Ky0sdS1BHtVVAiTDTpnLxiUdanEw87ccQFtKCnR_qIwHdukIXp7NDDT2CHl--q9VR"/>
+</div>
+<!-- Asymmetrical element -->
+<div class="absolute -bottom-6 -left-6 bg-tertiary-container p-6 rounded-lg z-20 hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-on-tertiary-container flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-wider">Top Rated</div>
+<div class="text-lg font-bold text-on-tertiary-container">4.9/5 Guide Rating</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tonal Architectural Shift -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-on-surface mb-4">What's inside</h2>
+<div class="h-1.5 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Column 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl" data-icon="layers">layers</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4">Tonal Architecture</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Learn to create depth without shadows. Master the art of layering hex codes to create sophisticated visual hierarchies.
+                        </p>
+</div>
+<!-- Column 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-primary-container text-on-primary-container rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl" data-icon="edit_note">edit_note</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4">Editorial Voice</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Discover the secret of typographic scaling. Pair massive headlines with tight metadata for that premium magazine aesthetic.
+                        </p>
+</div>
+<!-- Column 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all duration-300 hover:translate-y-[-4px]">
+<div class="w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-lg flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl" data-icon="navigation">navigation</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-4">Intentional Flow</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Use asymmetrical layouts and vibrant navigational cues to guide users through complex data with absolute clarity.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Editorial Section -->
+<section class="bg-background py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-secondary-container rounded-xl p-8 md:p-16 relative overflow-hidden">
+<!-- Asymmetrical vector overlap -->
+<div class="absolute right-0 top-0 w-1/3 h-full bg-on-secondary opacity-20 transform skew-x-12 translate-x-20"></div>
+<div class="max-w-2xl relative z-10">
+<div class="label-md uppercase tracking-[0.2em] font-bold text-on-secondary-container mb-4">Pro-Tip</div>
+<h2 class="text-3xl md:text-5xl font-extrabold text-on-secondary-container mb-6 leading-tight">
+                            The "No-Line" Rule is your secret weapon.
+                        </h2>
+<p class="text-on-secondary-container text-lg font-medium opacity-90 mb-8 leading-relaxed">
+                            Traditional dividers feel cluttered. Instead, define boundaries through subtle background color shifts. A section transition should feel like a page turn, not a break.
+                        </p>
+<a class="inline-flex items-center gap-2 font-headline font-bold text-on-secondary-container group" href="#">
+                            Read the full methodology
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="trending_flat">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-[#eae5ff] dark:bg-[#121124]">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-[#2e2a50] dark:text-[#f9f5ff] mb-2">The Modern Cartographer</div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#2e2a50] dark:text-[#aea8d7]">
+                    © 2024 The Modern Cartographer. All rights reserved.
+                </div>
+</div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm tracking-wide text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-all opacity-80 hover:opacity-100" href="#">Contact Support</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#2e2a50] dark:text-[#aea8d7] hover:text-[#2f42eb] transition-all opacity-80 hover:opacity-100" href="#">Newsletter</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GUIDE.IO | Your Ultimate Guide to Mastery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-dim": "#515356",
+                    "on-secondary": "#f8f9fc",
+                    "error-container": "#fe8983",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#d2e5f7",
+                    "primary-container": "#d3e5f3",
+                    "on-surface": "#233442",
+                    "primary": "#50606c",
+                    "outline-variant": "#a2b4c5",
+                    "surface-container-low": "#ecf4fe",
+                    "on-primary": "#f2f8ff",
+                    "on-tertiary-fixed": "#333d55",
+                    "background": "#f6f9ff",
+                    "primary-fixed": "#d3e5f3",
+                    "on-secondary-fixed": "#3d3f42",
+                    "tertiary": "#555f78",
+                    "tertiary-container": "#d5dffd",
+                    "surface-container-high": "#dbeaf9",
+                    "tertiary-dim": "#49536b",
+                    "outline": "#6b7d8d",
+                    "surface-container-highest": "#d2e5f7",
+                    "tertiary-fixed-dim": "#c7d1ef",
+                    "on-tertiary-fixed-variant": "#4f5972",
+                    "primary-dim": "#445460",
+                    "surface": "#f6f9ff",
+                    "surface-container": "#e4effc",
+                    "secondary": "#5d5f62",
+                    "on-primary-container": "#43545f",
+                    "inverse-primary": "#dff0ff",
+                    "surface-bright": "#f6f9ff",
+                    "secondary-fixed": "#e2e2e5",
+                    "on-secondary-container": "#505254",
+                    "on-error": "#fff7f6",
+                    "on-primary-fixed": "#31414c",
+                    "tertiary-fixed": "#d5dffd",
+                    "inverse-on-surface": "#989da4",
+                    "on-background": "#233442",
+                    "surface-dim": "#c7ddf2",
+                    "on-tertiary-container": "#465068",
+                    "on-secondary-fixed-variant": "#5a5c5e",
+                    "secondary-fixed-dim": "#d4d4d7",
+                    "secondary-container": "#e2e2e5",
+                    "on-primary-fixed-variant": "#4d5e69",
+                    "error-dim": "#4e0309",
+                    "on-error-container": "#752121",
+                    "surface-tint": "#50606c",
+                    "primary-fixed-dim": "#c5d7e5",
+                    "on-surface-variant": "#506170",
+                    "on-tertiary": "#f9f8ff",
+                    "inverse-surface": "#090f14",
+                    "error": "#9f403d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .neumorphic-raised {
+            background: #f6f9ff;
+            box-shadow: -8px -8px 20px #ffffff, 8px 8px 20px #d2e5f7;
+        }
+        .neumorphic-inset {
+            background: #f6f9ff;
+            box-shadow: inset -4px -4px 10px #ffffff, inset 4px 4px 10px #d2e5f7;
+        }
+        .neumorphic-button {
+            transition: all 0.2s ease-in-out;
+            background: #f6f9ff;
+            box-shadow: -4px -4px 12px #ffffff, 4px 4px 12px #d2e5f7;
+        }
+        .neumorphic-button:active {
+            box-shadow: inset -2px -2px 6px #ffffff, inset 2px 2px 6px #d2e5f7;
+            transform: scale(0.98);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(35,52,66,0.04)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-700 dark:text-slate-100 font-headline">GUIDE.IO</div>
+<div class="hidden md:flex items-center space-x-8 font-headline font-semibold tracking-tight text-slate-600 dark:text-slate-300">
+<a class="text-slate-900 dark:text-white border-b-2 border-slate-500 pb-1" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 transition-colors" href="#">Guide</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-700 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="neumorphic-button px-6 py-2 rounded-xl text-primary font-bold text-sm uppercase tracking-widest active:scale-95 duration-200 ease-in-out">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-block px-4 py-1 rounded-full neumorphic-inset text-primary font-label text-[10px] font-bold uppercase tracking-[0.2em]">
+                    The New Standard of Learning
+                </div>
+<h1 class="font-headline font-extrabold text-6xl md:text-7xl text-on-surface leading-[1.1] tracking-tighter">
+                    Your Ultimate <span class="text-primary">Guide</span> to Mastery
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-lg leading-relaxed font-body">
+                    Sculpt your skills with precision. Our tactile interface brings a physical sense of progress to your digital journey.
+                </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<button class="neumorphic-button px-8 py-4 rounded-xl bg-primary text-on-primary font-headline font-bold text-lg flex items-center gap-2">
+                        Get Started
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="neumorphic-button px-8 py-4 rounded-xl text-primary font-headline font-bold text-lg">
+                        Learn More
+                    </button>
+</div>
+</div>
+<div class="relative group">
+<div class="neumorphic-raised p-4 rounded-[2rem] aspect-square overflow-hidden transform transition-transform duration-500 group-hover:scale-[1.02]">
+<img alt="Digital Mastery" class="w-full h-full object-cover rounded-[1.5rem]" data-alt="Modern minimalist aesthetic of futuristic glass glowing technology cubes floating in a serene soft blue and white studio space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmuDffQM6NoKtsFvhR3XRnSoMOr7oFi0k3Nh1FLCBRYVhLE9QWm7CpIUC5WqqqxgsLQaxqfKcrC8bixPKYdUJ_z6dV6qDVbbUTuStecc3lvCYRfD6ovudh1s7NWNz2Y_seQxACabKU5faWTlFOcigx0wnTRF7874BURKWzMMqqZvKEqBhspefGtIorvqvMAu6ZFq32h6-mNBJpcvRl8RU8Wk4k2uDSYDVGqRkTlQSwvzFZ8sfrLmrMfUcF3WjYR6SVZRT-u2VZfLg"/>
+</div>
+<!-- Decorative Floaters -->
+<div class="absolute -top-6 -right-6 w-24 h-24 neumorphic-raised rounded-2xl flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+</section>
+<!-- Key Features -->
+<section class="max-w-7xl mx-auto px-8 mt-48">
+<div class="text-center space-y-4 mb-20">
+<h2 class="font-headline font-extrabold text-4xl text-on-surface">Precision-Crafted Features</h2>
+<div class="w-24 h-1.5 neumorphic-inset mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<!-- Card 1 -->
+<div class="neumorphic-raised p-10 rounded-[2rem] space-y-6">
+<div class="w-16 h-16 neumorphic-inset rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="psychology">psychology</span>
+</div>
+<h3 class="font-headline font-bold text-2xl">Adaptive Intelligence</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">
+                        Our system carves out a unique path tailored to your individual cognitive patterns.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="neumorphic-raised p-10 rounded-[2rem] space-y-6 lg:translate-y-12">
+<div class="w-16 h-16 neumorphic-inset rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="draw">draw</span>
+</div>
+<h3 class="font-headline font-bold text-2xl">Tactile Design</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">
+                        Interfaces that feel physical. Every click provides a sense of depth and intentionality.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="neumorphic-raised p-10 rounded-[2rem] space-y-6">
+<div class="w-16 h-16 neumorphic-inset rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="speed">speed</span>
+</div>
+<h3 class="font-headline font-bold text-2xl">Rapid Progress</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">
+                        Accelerate your mastery with feedback loops designed to keep you in the flow state.
+                    </p>
+</div>
+</div>
+</section>
+<!-- How it Works -->
+<section class="bg-surface-container-low mt-48 py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1">
+<div class="neumorphic-inset rounded-[2.5rem] p-4 relative">
+<img alt="Work in Progress" class="w-full h-96 object-cover rounded-[2rem]" data-alt="A clean top-down view of a designer's desk with a minimalist keyboard and silver laptop on a light grey surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_HbHl8rabIF7MRd7SpNtH43ZNZH4uCzau017jvZ3fsxednw-KzmETlAeP4A-u_1lPRSEhXpnr5DU5zHke9K09vJUi1g7R5eyW8p5AvN3LT1RzLQaIkt2ir1BhucgeT5tmvs58JdZqy1aCeI5jxtRnyGQSAOIp0ezPMIf3IruSfzc79aFwinsWk59Fr4Kulbhx6CzNUkfY2TIbIz4QKQimI8DFm_lxoTK6AsYUWIjDM2TNWQouI7dtz4RQFycgDUMl_he1TrglmZ4"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="w-20 h-20 neumorphic-raised rounded-full flex items-center justify-center group hover:scale-110 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-10">
+<h2 class="font-headline font-extrabold text-4xl text-on-surface">How it Works</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 neumorphic-raised rounded-xl flex items-center justify-center font-headline font-black text-primary">01</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Connect Your Goals</h4>
+<p class="text-on-surface-variant">Define what mastery looks like for you. Our interface guides the initial framing.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 neumorphic-raised rounded-xl flex items-center justify-center font-headline font-black text-primary">02</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Guided Execution</h4>
+<p class="text-on-surface-variant">Engage with micro-tasks that feel like carving a masterpiece out of stone.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 neumorphic-raised rounded-xl flex items-center justify-center font-headline font-black text-primary">03</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2">Achieve Mastery</h4>
+<p class="text-on-surface-variant">Watch your skills materialize through a beautiful, physical progression map.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-5xl mx-auto px-8 mt-48 text-center">
+<div class="neumorphic-raised p-20 rounded-[3rem] space-y-8 bg-gradient-to-br from-surface to-surface-container-low">
+<h2 class="font-headline font-extrabold text-5xl text-on-surface">Ready to start carving?</h2>
+<p class="text-on-surface-variant text-xl max-w-xl mx-auto">
+                    Join over 50,000 masters-in-the-making who have transformed their digital learning into a tactile experience.
+                </p>
+<div class="pt-6">
+<button class="neumorphic-button px-12 py-5 rounded-2xl bg-primary text-on-primary font-headline font-extrabold text-xl shadow-lg">
+                        Get Your Free Guide
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4 font-body text-sm tracking-wide text-slate-500 dark:text-slate-400">
+<div class="font-headline font-bold text-slate-700 dark:text-slate-300">GUIDE.IO</div>
+<div>© 2024 Tactile Guide. Sculpted with Precision.</div>
+<div class="flex gap-8">
+<a class="hover:underline transition-all text-slate-500 dark:text-slate-400" href="#">Privacy Policy</a>
+<a class="hover:underline transition-all text-slate-500 dark:text-slate-400" href="#">Terms of Service</a>
+<a class="hover:underline transition-all text-slate-500 dark:text-slate-400" href="#">Support</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Tactile Atelier | Technical Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Inter:wght@400;500&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#e5e2e1",
+                    "surface-dim": "#131313",
+                    "outline": "#8e9192",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#303221",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "on-primary-container": "#00a1c2",
+                    "surface-container": "#20201f",
+                    "inverse-primary": "#00677e",
+                    "surface": "#131313",
+                    "surface-bright": "#393939",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-error-container": "#ffdad6",
+                    "tertiary-fixed": "#e4e4cc",
+                    "tertiary": "#c8c8b0",
+                    "tertiary-fixed-dim": "#c8c8b0",
+                    "surface-container-highest": "#353535",
+                    "on-tertiary-fixed-variant": "#474836",
+                    "inverse-on-surface": "#313030",
+                    "on-surface": "#e5e2e1",
+                    "secondary-fixed": "#e3e2e2",
+                    "on-secondary-container": "#b8b8b8",
+                    "error": "#ffb4ab",
+                    "primary": "#3cd7ff",
+                    "primary-container": "#00313d",
+                    "on-primary": "#003642",
+                    "tertiary-container": "#2b2d1d",
+                    "background": "#131313",
+                    "on-surface-variant": "#c4c7c7",
+                    "on-primary-fixed": "#001f27",
+                    "surface-variant": "#353535",
+                    "on-primary-fixed-variant": "#004e5f",
+                    "secondary": "#c6c6c6",
+                    "on-tertiary-fixed": "#1b1d0e",
+                    "on-background": "#e5e2e1",
+                    "error-container": "#93000a",
+                    "secondary-container": "#484949",
+                    "on-error": "#690005",
+                    "on-secondary": "#2f3131",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-fixed": "#b4ebff",
+                    "surface-tint": "#3cd7ff",
+                    "primary-fixed-dim": "#3cd7ff",
+                    "outline-variant": "#444748",
+                    "surface-container-low": "#1c1b1b",
+                    "on-tertiary-container": "#94957f",
+                    "on-secondary-fixed-variant": "#464747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grain-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+        }
+        .brushed-metal {
+            background: linear-gradient(45deg, #c6c6c6 0%, #a0a0a0 45%, #c6c6c6 50%, #a0a0a0 55%, #c6c6c6 100%);
+        }
+        .engraved-text {
+            text-shadow: 0px 1px 0px rgba(255,255,255,0.1);
+            box-shadow: inset 0px 1px 2px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body overflow-x-hidden selection:bg-primary/30">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl border-b border-[#C6C6C6]/10 flex justify-between items-center px-8 h-16 shadow-[0px_10px_20px_rgba(0,0,0,0.3)]">
+<div class="text-xl font-bold tracking-tighter text-[#E4E4CC] uppercase font-label">The Tactile Atelier</div>
+<div class="hidden md:flex items-center space-x-10 font-label text-[11px] tracking-[0.2em] uppercase">
+<a class="text-[#3CD7FF] font-bold border-b-2 border-[#3CD7FF] pb-1 transition-all duration-300" href="#">The Archive</a>
+<a class="text-[#C6C6C6]/60 hover:text-[#3CD7FF] transition-colors duration-300" href="#">Specifications</a>
+<a class="text-[#C6C6C6]/60 hover:text-[#3CD7FF] transition-colors duration-300" href="#">Process</a>
+<a class="text-[#C6C6C6]/60 hover:text-[#3CD7FF] transition-colors duration-300" href="#">Library</a>
+</div>
+<button class="bg-surface-container-high px-6 py-2 rounded-lg text-[#3CD7FF] font-label text-xs uppercase tracking-widest shadow-[0_4px_0_0_#000] active:translate-y-[2px] active:shadow-[0_2px_0_0_#000] transition-all duration-75">Connect</button>
+</nav>
+<main class="relative pt-16 min-h-screen flex flex-col items-center justify-center">
+<!-- Background Depth Layer -->
+<div class="absolute inset-0 grain-texture pointer-events-none"></div>
+<!-- Hero Canvas -->
+<div class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-16 relative z-10">
+<!-- Left Content: Engraved Messaging -->
+<div class="w-full md:w-1/2 space-y-8">
+<div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-surface-container-lowest shadow-[inset_0px_2px_4px_rgba(0,0,0,0.4)] border-t border-white/5">
+<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_#3cd7ff]"></span>
+<span class="font-label text-[10px] tracking-[0.15em] text-on-surface-variant uppercase">Mk. IV Engineering Module</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold font-headline leading-tight tracking-tighter text-on-surface drop-shadow-[0px_2px_0px_rgba(255,255,255,0.05)]">
+                    The Art of <br/>
+<span class="text-primary italic">Precision</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg leading-relaxed font-body">
+                    A definitive guide to high-fidelity tactile interaction. Master the mechanics of digital materiality and physical weight in modern interface engineering.
+                </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<!-- The "Machined Switch" Primary CTA -->
+<button class="relative group">
+<div class="absolute -inset-1 bg-primary/20 blur-xl group-hover:bg-primary/40 transition-all"></div>
+<div class="relative bg-gradient-to-b from-primary to-on-primary-container px-10 py-5 rounded-xl font-label font-bold uppercase tracking-widest text-on-primary shadow-[0_8px_0_0_#00313d,0_15px_20px_-5px_rgba(0,0,0,0.6)] active:translate-y-1 active:shadow-[0_4px_0_0_#00313d] transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            Initiate Sequence
+                        </div>
+</button>
+<!-- Secondary Leather-Clad Toggle -->
+<button class="relative bg-surface-container-high px-10 py-5 rounded-xl font-label font-bold uppercase tracking-widest text-secondary shadow-[0_8px_0_0_#0e0e0e,0_15px_20px_-5px_rgba(0,0,0,0.5)] active:translate-y-1 active:shadow-[0_4px_0_0_#0e0e0e] transition-all border-t border-white/5 overflow-hidden">
+<div class="absolute inset-0 grain-texture opacity-20"></div>
+                        View Specifications
+                    </button>
+</div>
+</div>
+<!-- Right Content: Asymmetric Bento Hardware Grid -->
+<div class="w-full md:w-1/2 relative">
+<div class="grid grid-cols-6 grid-rows-6 gap-4 aspect-square">
+<!-- Main Focus Panel: Smoked Glass -->
+<div class="col-span-4 row-span-4 bg-surface-bright/20 backdrop-blur-2xl rounded-2xl p-1 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-t border-l border-white/10 group">
+<div class="absolute inset-0 grain-texture opacity-10"></div>
+<img class="w-full h-full object-cover rounded-xl grayscale group-hover:grayscale-0 transition-all duration-700 opacity-60 group-hover:opacity-100" data-alt="close-up of a high-end luxury watch movement with polished gears and gold escapement in dramatic dark lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcaOKbC5JxAr7xf0EyQPs75S6F_jQ6gWH-s40kbYsFnL-v63O4tNwUYQcdWIAQk0cMHnG-FgSw5W_yU2ZTozknLaFVq4c4lUuFWA1YnnX5Uuk2oXiuQ_pKZM2fv-S-fcDWOWPniF9Q4MAY1dBqievRafQgWnZ8z9E-h-IF_rZoENlpv6GTMRZu3t6I3Pvl9vN87dvcUkK18xnvsd8qGEMpiW3Y5_oalgYOliOrjzNCjS-2lnYx-wmDucJj53GlMbRoK8rJ6A4ZhRU"/>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="font-label text-[10px] tracking-[0.2em] text-primary uppercase mb-1">Component A-01</div>
+<div class="text-xl font-bold font-headline">Internal Chronology</div>
+</div>
+</div>
+<!-- Brushed Metal Metric -->
+<div class="col-span-2 row-span-2 bg-gradient-to-br from-secondary to-secondary-fixed-dim rounded-2xl p-6 shadow-[inset_0px_1px_2px_rgba(255,255,255,0.5),0_10px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-sm text-primary">settings_input_component</span>
+</div>
+<div>
+<div class="text-3xl font-black font-headline text-surface leading-none">0.02</div>
+<div class="font-label text-[9px] text-surface-container-high tracking-tighter font-bold uppercase">Tolerance</div>
+</div>
+</div>
+<!-- Recessed Control Well -->
+<div class="col-span-2 row-span-4 bg-surface-container-lowest rounded-2xl shadow-[inset_0px_4px_12px_rgba(0,0,0,0.8)] p-4 flex flex-col gap-4">
+<div class="h-1/3 bg-surface-container-high rounded-xl shadow-[0_4px_0_0_#000] border-t border-white/5 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary/40">vibration</span>
+</div>
+<div class="flex-1 flex flex-col justify-end gap-2 px-2">
+<div class="h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-primary shadow-[0_0_10px_#3cd7ff]"></div>
+</div>
+<div class="h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-1/2 h-full bg-primary shadow-[0_0_10px_#3cd7ff]"></div>
+</div>
+<div class="h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-1/4 h-full bg-primary shadow-[0_0_10px_#3cd7ff]"></div>
+</div>
+</div>
+</div>
+<!-- Amber Highlight Panel -->
+<div class="col-span-4 row-span-2 bg-tertiary-container/30 border-t border-tertiary/20 rounded-2xl p-6 flex items-center gap-6 shadow-[0_15px_30px_rgba(0,0,0,0.4)]">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-2 border-dashed border-tertiary/20"></div>
+<span class="material-symbols-outlined text-tertiary text-3xl">bolt</span>
+</div>
+<div>
+<div class="font-label text-[10px] text-tertiary/60 tracking-widest uppercase">System Status</div>
+<div class="text-lg font-bold font-headline text-tertiary-fixed">Active Resonance</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Detailed Feature Section -->
+<section class="bg-surface-container-low py-32 relative">
+<div class="absolute inset-0 grain-texture opacity-5"></div>
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-12">
+<!-- Feature 1: The Dial -->
+<div class="flex flex-col gap-6">
+<div class="w-20 h-20 rounded-full bg-surface-container-high shadow-[0_10px_20px_rgba(0,0,0,0.5),inset_0_2px_4px_rgba(255,255,255,0.1)] border-t border-white/5 flex items-center justify-center relative group">
+<div class="absolute inset-2 rounded-full border-2 border-surface-container-lowest shadow-inner"></div>
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">precision_manufacturing</span>
+<div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary shadow-[0_0_5px_#3cd7ff]"></div>
+</div>
+<h3 class="text-2xl font-bold font-headline">Machined Integrity</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">Each element is designed as if carved from a single block of aerospace-grade material.</p>
+</div>
+<!-- Feature 2: Light Leak -->
+<div class="flex flex-col gap-6">
+<div class="w-20 h-20 rounded-full bg-surface-container-high shadow-[0_10px_20px_rgba(0,0,0,0.5),inset_0_2px_4px_rgba(255,255,255,0.1)] border-t border-white/5 flex items-center justify-center relative group">
+<div class="absolute inset-2 rounded-full border-2 border-surface-container-lowest shadow-inner"></div>
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">flare</span>
+<div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-on-tertiary-container shadow-[0_0_5px_#94957f]"></div>
+</div>
+<h3 class="text-2xl font-bold font-headline">Natural Specularity</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">Shadows and highlights follow real-world physics, creating a sense of palpable weight.</p>
+</div>
+<!-- Feature 3: Kinetic Feedback -->
+<div class="flex flex-col gap-6">
+<div class="w-20 h-20 rounded-full bg-surface-container-high shadow-[0_10px_20px_rgba(0,0,0,0.5),inset_0_2px_4px_rgba(255,255,255,0.1)] border-t border-white/5 flex items-center justify-center relative group">
+<div class="absolute inset-2 rounded-full border-2 border-surface-container-lowest shadow-inner"></div>
+<span class="material-symbols-outlined text-primary text-3xl group-hover:scale-110 transition-transform">layers</span>
+<div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error shadow-[0_0_5px_#ffb4ab]"></div>
+</div>
+<h3 class="text-2xl font-bold font-headline">Tonal Stacking</h3>
+<p class="text-on-surface-variant font-body leading-relaxed">Zero-border philosophy using container tiers to define boundaries and interactive depth.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-[#0E0E0E] w-full py-12 border-t border-[#C6C6C6]/5 inner-shadow-[inset_0px_2px_4px_rgba(0,0,0,0.4)]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6">
+<div class="text-lg font-black text-[#C6C6C6] font-label uppercase">The Tactile Atelier</div>
+<div class="flex gap-10 font-label text-[11px] tracking-widest uppercase">
+<a class="text-[#C6C6C6]/40 hover:text-[#E4E4CC] transition-colors" href="#">Manual</a>
+<a class="text-[#C6C6C6]/40 hover:text-[#E4E4CC] transition-colors" href="#">Privacy</a>
+<a class="text-[#C6C6C6]/40 hover:text-[#E4E4CC] transition-colors" href="#">Terms</a>
+<a class="text-[#C6C6C6]/40 hover:text-[#E4E4CC] transition-colors" href="#">Support</a>
+</div>
+<div class="text-[10px] text-[#C6C6C6]/40 font-label tracking-tight uppercase">
+                © 2024 The Tactile Atelier. Precision Engineered.
+            </div>
+</div>
+</footer>
+</body></html>

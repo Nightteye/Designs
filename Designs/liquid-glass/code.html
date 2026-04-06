@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIST | Liquid Glass Editorial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#d4dbde",
+                    "primary-container": "#bdefbe",
+                    "primary-fixed-dim": "#afe1b1",
+                    "on-primary-fixed": "#1c4825",
+                    "surface-container-high": "#e3e9eb",
+                    "on-primary-container": "#2f5b36",
+                    "on-error-container": "#6e0a12",
+                    "tertiary-container": "#f8bbd0",
+                    "secondary-container": "#b3ecf3",
+                    "on-secondary": "#e9fdff",
+                    "surface-container": "#eaeff0",
+                    "background": "#f8fafb",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#39653f",
+                    "tertiary-fixed-dim": "#e9aec3",
+                    "error-dim": "#67040d",
+                    "secondary": "#2e676d",
+                    "on-secondary-fixed-variant": "#2a646a",
+                    "on-tertiary-fixed-variant": "#6c3f51",
+                    "surface-variant": "#dce4e6",
+                    "primary": "#3c6942",
+                    "on-primary": "#e9ffe6",
+                    "outline": "#747c7e",
+                    "inverse-on-surface": "#9a9d9e",
+                    "secondary-fixed": "#b3ecf3",
+                    "on-error": "#fff7f6",
+                    "tertiary-dim": "#734557",
+                    "surface-bright": "#f8fafb",
+                    "on-surface-variant": "#596063",
+                    "on-tertiary-container": "#623648",
+                    "outline-variant": "#acb3b6",
+                    "tertiary": "#815163",
+                    "surface-tint": "#3c6942",
+                    "on-secondary-container": "#1e5a60",
+                    "inverse-surface": "#0b0f10",
+                    "secondary-fixed-dim": "#a5dee5",
+                    "on-background": "#2c3436",
+                    "error-container": "#fa746f",
+                    "error": "#a83836",
+                    "on-tertiary-fixed": "#4b2334",
+                    "secondary-dim": "#205b61",
+                    "surface-container-low": "#f0f4f6",
+                    "surface": "#f8fafb",
+                    "surface-container-highest": "#dce4e6",
+                    "primary-dim": "#315c37",
+                    "on-tertiary": "#fff7f7",
+                    "tertiary-fixed": "#f8bbd0",
+                    "on-secondary-fixed": "#00474d",
+                    "on-surface": "#2c3436",
+                    "inverse-primary": "#cbfecc",
+                    "primary-fixed": "#bdefbe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafb; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .mist-shadow { box-shadow: 0 12px 40px rgba(44, 52, 54, 0.06); }
+        .gradient-text { background: linear-gradient(135deg, #3c6942 0%, #bdefbe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_12px_40px_rgba(44,52,54,0.06)]">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-emerald-900 dark:text-emerald-50">MIST</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-medium text-emerald-900 dark:text-white border-b border-emerald-900/20 pb-1 hover:opacity-70 transition-opacity duration-500" href="#">Collections</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-medium text-slate-500 dark:text-slate-400 hover:opacity-70 transition-opacity duration-500" href="#">Curations</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-medium text-slate-500 dark:text-slate-400 hover:opacity-70 transition-opacity duration-500" href="#">Editorial</a>
+<a class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-medium text-slate-500 dark:text-slate-400 hover:opacity-70 transition-opacity duration-500" href="#">The Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-['Plus_Jakarta_Sans'] tracking-tight text-sm font-medium text-emerald-900 dark:text-emerald-100 hover:opacity-70 transition-opacity duration-500">Inquire</button>
+<span class="material-symbols-outlined text-on-surface cursor-pointer" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative pt-32 overflow-hidden">
+<!-- Ethereal Corner Gradients -->
+<div class="absolute top-[-10%] left-[-5%] w-[40%] h-[40%] bg-primary-container/20 rounded-full blur-[120px] -z-10"></div>
+<div class="absolute bottom-[5%] right-[-10%] w-[50%] h-[50%] bg-secondary-container/20 rounded-full blur-[150px] -z-10"></div>
+<div class="absolute top-[20%] right-[10%] w-[30%] h-[30%] bg-tertiary-container/10 rounded-full blur-[100px] -z-10"></div>
+<!-- Hero Section: Optical Clarity -->
+<section class="max-w-[1440px] mx-auto px-12 pb-32">
+<div class="grid grid-cols-12 gap-8 items-center">
+<div class="col-span-12 lg:col-span-6 space-y-8">
+<div class="space-y-2">
+<span class="label-md uppercase tracking-[0.2em] text-on-surface-variant font-semibold text-xs">Curated Excellence</span>
+<h1 class="text-[clamp(3.5rem,8vw,5.5rem)] font-extrabold leading-[1.05] tracking-tighter text-on-surface">
+                            Optical <br/>
+<span class="gradient-text">Clarity.</span>
+</h1>
+</div>
+<p class="text-on-surface-variant text-lg max-w-md leading-relaxed">
+                        Discover a world where boundaries dissolve into light. Our Morning Mist collection explores the interplay of liquid form and ethereal depth.
+                    </p>
+<div class="flex gap-4 pt-4">
+<button class="px-10 py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-full font-bold tracking-tight hover:shadow-lg transition-all duration-500">
+                            Explore Gallery
+                        </button>
+<button class="px-10 py-5 glass-card rounded-full font-semibold text-on-surface hover:bg-white/90 transition-all duration-500 mist-shadow">
+                            The Story
+                        </button>
+</div>
+</div>
+<!-- 3D Sculpture Hero Image -->
+<div class="col-span-12 lg:col-span-6 relative flex justify-center">
+<div class="relative w-full aspect-square max-w-2xl flex items-center justify-center">
+<img class="w-full h-full object-contain filter drop-shadow-2xl" data-alt="large abstract 3D glass sculpture with prismatic refractions catching soft morning light on a white studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAedgVlZiM1GME15y2pnOqcCNvEHvaaP5fSsIaQM7t6nqfS8BOgwisnp0VvJJ8iIVqLfXbTTUnn8pNkXInfN5F2A3jcRVkjKN4tJay9OCnfO3XH8m1l89gZW5H91QOSP81UqVTwCIUsY6kxOD4EteK2jlnLQLXOHxDnSzl0yvmT_ajNU5KzqdbexFQCOmDl25R3NZWvAASNP3KIK4oiAMIifRryeOyCTjSJBeSk8dddHyhGJSYkAREsopO8akM9UgfWkhc3q8j_yts"/>
+<!-- Floating Glass Cards -->
+<div class="absolute top-[10%] -left-8 glass-card p-6 rounded-xl mist-shadow w-48 hidden md:block">
+<span class="material-symbols-outlined text-primary mb-2" data-icon="light_mode">light_mode</span>
+<h4 class="font-bold text-sm">Refraction Study</h4>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Morning Mist / 01</p>
+</div>
+<div class="absolute bottom-[15%] -right-8 glass-card p-6 rounded-xl mist-shadow w-56 hidden md:block">
+<div class="flex gap-2 items-center mb-2">
+<div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+<span class="font-bold text-sm">Liquid Volume</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-snug">Visualizing the weightless nature of sculpted glass light.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Ethereal Depth -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl font-bold tracking-tight mb-4">Architectural Liquid</h2>
+<p class="text-on-surface-variant">The intersection of physical craft and digital etherealism. Each piece is a testament to the clarity of vision.</p>
+</div>
+<div class="text-right">
+<span class="text-[5rem] font-extrabold text-on-surface/5 leading-none">2024</span>
+</div>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
+<!-- Primary Featured -->
+<div class="md:col-span-8 relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="minimalist architecture interior with glass walls reflecting soft green foliage and misty morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR0aAVM8JnB6OfYGgumXKI2cf2BRzhH6HicCVauOvYQstc_JOlx43sH91Ys0fpPfHydyCT6dYWjRDhTlAFnSOInRkGMghl5urbP_ImPLAp4NSrrEsHmhV4hKIt0Tf96sX15gm6M5YMjqqgkou9bnDT-MoqY4CdHVe7bTHow7jh6FmrPBNISf5xhbipNSq3fIQrGaCfKYRZCPYn-ZDxZteoJzl4Jd74AMFz6PZJROdrzf3kFZPaHxNTtJK2UDqzep0_D0YpbMPvg-E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-emerald-900/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 text-white">
+<p class="label-md text-[10px] tracking-[0.2em] mb-2">COLLECTION</p>
+<h3 class="text-3xl font-bold">The Verre Atrium</h3>
+</div>
+</div>
+<!-- Side Stacks -->
+<div class="md:col-span-4 grid grid-rows-2 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl mist-shadow flex flex-col justify-between">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="blur_on">blur_on</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Texture Diffusion</h4>
+<p class="text-on-surface-variant text-sm">Managing the opacity of digital glass for a natural, mist-like feel.</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="abstract macro shot of crystalline glass bubbles with iridescent oil film surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAefG67KpifWMlOhQYhV_O19tb-NmCgmaI-GPWOuNoA-cpC47q-RjDCy_AwuuABOMhM3qlQxmj8C2bshLduiEeRabu5AobnUdA-bWwA3eaky0ZU81qSUFw1B8fj7iK6skkayfn0p16UljWKheXnCBsOLZUZtayTHDpMXIYvGqjUYmuj0j0w00KfCGf_LicooY-sDn7aq69_7KbvgZwrkVeYrdrxvpGINy2BrpUG3BQF2-9EpQvO015fNn0I1xhlJkmnQT5HWofqKQQ"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Spotlight -->
+<section class="py-40 max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden mist-shadow">
+<img class="w-full h-full object-cover" data-alt="close-up of a high-end designer glass perfume bottle with delicate light refractions and soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBhXPtYBZjuvtZLSQOo8b2kly6a--mLR-er8JbnzIhqLrOase8QI3ZuUMRxl_gckBPoF9sz2TVIFurgz84Qi0hydnJ-n_Fcwp6UipUPkTKrw1Q78dG9URNyDiMXW_-vBDnop-eDYsuGaM0P7gdYAkzFrfp1RR6hLu5GeFtjGhygATmMJ0WWdbvZpRxaEmAaRxAXWsiMsaY997ltw4fsWlVi_n54KUwLp5iyQl6CVR38lTGJx2IDhEZrkKYgFQNgVafRVyeyJI4frU"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-tertiary-container/30 rounded-full blur-3xl -z-10"></div>
+</div>
+<div class="order-1 lg:order-2 space-y-10">
+<h2 class="text-5xl font-bold tracking-tighter leading-tight">Crafted with <br/>Ethereal Intent.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="opacity">opacity</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Liquid Form Factors</h4>
+<p class="text-on-surface-variant">Objects that behave like water but maintain the permanence of solid crystalline structures.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="grid_view">grid_view</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Optical Perfection</h4>
+<p class="text-on-surface-variant">Zero-distortion visual fields designed for professional clarity in digital editorial layouts.</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-4 font-bold text-primary group" href="#">
+                        View Technical Specs
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-[1200px] mx-auto px-12 mb-20">
+<div class="bg-surface-container-highest rounded-[3rem] p-16 md:p-24 text-center space-y-8 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none"></div>
+<h3 class="text-4xl md:text-6xl font-bold tracking-tight">Stay in the Mist.</h3>
+<p class="text-on-surface-variant max-w-xl mx-auto text-lg">Weekly insights into high-end editorial design and liquid visual trends.</p>
+<form class="max-w-md mx-auto flex gap-2">
+<input class="flex-1 bg-surface rounded-full border-none px-6 py-4 focus:ring-2 focus:ring-primary/20 text-on-surface mist-shadow" placeholder="Email address" type="email"/>
+<button class="bg-on-surface text-surface px-8 py-4 rounded-full font-bold hover:bg-on-surface/80 transition-colors">Join</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 mt-20 bg-slate-50 dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center gap-8 border-t border-emerald-900/5">
+<div class="flex gap-12">
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-semibold text-slate-400 dark:text-slate-600 hover:text-emerald-600 transition-colors duration-300" href="#">Privacy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-semibold text-slate-400 dark:text-slate-600 hover:text-emerald-600 transition-colors duration-300" href="#">Terms</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-semibold text-slate-400 dark:text-slate-600 hover:text-emerald-600 transition-colors duration-300" href="#">Studio</a>
+<a class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-semibold text-slate-400 dark:text-slate-600 hover:text-emerald-600 transition-colors duration-300" href="#">Contact</a>
+</div>
+<p class="font-['Plus_Jakarta_Sans'] text-[10px] uppercase tracking-[0.1em] font-semibold text-emerald-900 dark:text-emerald-100">
+            © 2024 MORNING MIST EDITORIAL. ALL RIGHTS RESERVED.
+        </p>
+</footer>
+</body></html>

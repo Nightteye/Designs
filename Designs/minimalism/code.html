@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CURATOR | The Monograph</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#9f403d",
+                    "outline-variant": "#acb3b4",
+                    "inverse-primary": "#ffffff",
+                    "secondary-fixed-dim": "#d5d4d4",
+                    "surface-container-high": "#e4e9ea",
+                    "surface-bright": "#f9f9f9",
+                    "surface-dim": "#d3dbdd",
+                    "surface-container-low": "#f2f4f4",
+                    "on-secondary-fixed": "#3f3f3f",
+                    "secondary-fixed": "#e3e2e2",
+                    "on-secondary-container": "#515252",
+                    "on-tertiary-fixed": "#484a4a",
+                    "on-primary-fixed": "#403f3f",
+                    "surface-variant": "#dde4e5",
+                    "secondary-container": "#e3e2e2",
+                    "background": "#f9f9f9",
+                    "primary": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#e5e2e1",
+                    "on-primary-fixed-variant": "#5c5b5b",
+                    "on-surface-variant": "#596061",
+                    "error-dim": "#4e0309",
+                    "tertiary": "#5e5f5f",
+                    "on-error": "#fff7f6",
+                    "secondary": "#5f5f5f",
+                    "tertiary-dim": "#525354",
+                    "primary-dim": "#535252",
+                    "on-secondary": "#faf8f8",
+                    "surface-container-highest": "#dde4e5",
+                    "inverse-on-surface": "#9c9d9d",
+                    "error-container": "#fe8983",
+                    "on-tertiary-fixed-variant": "#656666",
+                    "surface": "#f9f9f9",
+                    "on-primary-container": "#525151",
+                    "primary-fixed": "#e5e2e1",
+                    "tertiary-fixed": "#f4f3f3",
+                    "on-secondary-fixed-variant": "#5b5b5b",
+                    "on-tertiary": "#f9f9f9",
+                    "primary-fixed-dim": "#d6d4d3",
+                    "tertiary-container": "#f4f3f3",
+                    "on-background": "#2d3435",
+                    "surface-tint": "#5f5e5e",
+                    "on-tertiary-container": "#5a5c5c",
+                    "on-error-container": "#752121",
+                    "outline": "#757c7d",
+                    "on-surface": "#2d3435",
+                    "secondary-dim": "#535353",
+                    "surface-container": "#ebeeef",
+                    "inverse-surface": "#0c0f0f",
+                    "tertiary-fixed-dim": "#e5e5e5",
+                    "on-primary": "#faf7f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 w-full">
+<div class="text-xl font-bold tracking-tighter text-stone-900 uppercase">CURATOR</div>
+<nav class="hidden md:flex gap-12 items-center">
+<a class="font-['Manrope'] uppercase tracking-widest text-xs font-bold text-stone-900 border-b-2 border-stone-900 pb-1" href="#">Guides</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-xs font-bold text-stone-400 hover:text-stone-900 transition-colors" href="#">Essays</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-xs font-bold text-stone-400 hover:text-stone-900 transition-colors" href="#">Archive</a>
+<a class="font-['Manrope'] uppercase tracking-widest text-xs font-bold text-stone-400 hover:text-stone-900 transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-8">
+<span class="material-symbols-outlined text-stone-900 cursor-pointer">search</span>
+<button class="bg-primary text-on-primary px-8 py-3 font-['Manrope'] uppercase tracking-widest text-[10px] font-bold hover:opacity-70 transition-opacity duration-300 active:scale-95">Subscribe</button>
+</div>
+</header>
+<main>
+<!-- Hero Plate Section -->
+<section class="relative min-h-screen flex flex-col pt-32 pb-24 px-12 max-w-screen-2xl mx-auto">
+<div class="relative w-full aspect-[21/9] mb-24">
+<img alt="Minimalist architectural lighting" class="w-full h-full object-cover filter grayscale contrast-125" data-alt="Close-up of a minimalist modernist lamp in a shadows-filled architectural space with soft diffused morning light and neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXIblNKJKTuDkd_CzOlazeTlmDDknILwNSNu6gyUefZ6NVD8TUmahkZ8mLlSIqMmUzvWzpEm7I-43leTBaPQ-3mptQJvyqZ0NGqQyjUKl77kTJWe-RLvHLIsj8szBdVOZPeo7jYBzstsgVyzwp-M_gyvDZWTVmaRaYMwEmz9-PrbIDg6cgFPEUI42HCOQHSCKiFIAYsReNkeXulHJxFL70Fp7DtTRc1FjrokO-YhhtpIvxxpVRaT-E_5yo9HE_-GM7OK06wP43GVc"/>
+<!-- Hero Plate Overlap -->
+<div class="absolute -bottom-12 left-12 bg-surface-container-lowest p-12 max-w-2xl">
+<p class="text-[10px] tracking-[0.3em] uppercase text-on-surface-variant mb-4 font-semibold">Volume 04 / Interiority</p>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.85] text-on-surface mb-8">The Silent <br/>Architecture.</h1>
+<div class="w-24 h-px bg-primary mb-8"></div>
+<p class="text-lg text-on-surface-variant font-light leading-relaxed max-w-md">
+                        A definitive guide to the philosophy of reductive space, exploring how light and shadow define the modern sanctuary.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Content Grid (Bento/Asymmetric) -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
+<!-- Column 1: Intro Text -->
+<div class="md:col-span-5 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">menu_book</span>
+<h2 class="text-4xl font-bold tracking-tight mb-8">Curated restraint for the discerning observer.</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-12">
+                        We believe that the most profound experiences occur in the absence of noise. Our latest monograph delves into the architects and designers who use silence as their primary medium.
+                    </p>
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="text-xs uppercase tracking-widest font-bold border-b-2 border-primary pb-1 group-hover:border-on-surface transition-colors">Begin the Journey</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Column 2: Asymmetric Image Stack -->
+<div class="md:col-span-7 grid grid-cols-2 gap-8">
+<div class="pt-24">
+<div class="bg-surface-container-lowest aspect-[3/4] overflow-hidden">
+<img alt="Concrete staircase" class="w-full h-full object-cover grayscale brightness-90" data-alt="Dramatic high-contrast photograph of a concrete spiral staircase in a minimalist gallery with sharp geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf-H3cnJnqUoMX-ertXqrjdilPb9ONM4y8dYBLDw6qTJtGTsy9-kSgwJ3HppzwEupP5pmxtXsyy1xOayrgWE4HGrvAuun2DGOuvlfNJIIGiQ9XzXNN8D6Vodh2I3FReSeV33Hxgpj7UcMkukXiwAl7tI46pajPH1AZ4CqeGgVVoTjNPWhHRuaNmmIlgeiTlKmERnwY-Bnkcds4cdkER3Xbd-53SKEQdYDXwBy3aKFawRHaFha6ULEJ4ZW6LsJfBndKqNKx6u0fldQ"/>
+</div>
+</div>
+<div>
+<div class="bg-surface-container-lowest aspect-[3/4] overflow-hidden">
+<img alt="Clean office space" class="w-full h-full object-cover grayscale opacity-80" data-alt="Ultra-minimalist office interior with white walls, a single wooden desk, and expansive floor-to-ceiling windows showing a hazy sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5UTG2jrVxnkFKajFpOli0E7SK7mNXqDX4EQdieVgSAJzaLqBzLQtK7apfJ452ticiXxnhHGLvUGxh2QF0Xshkgbrw1rtaF4xxTzJAwvOBep1DvUQj3QRlgyu7OhAVMu0rIZf59jXpWabKM2KJ89hKlAJ1DJFL24_0n3zAyLN5tv3IF7KOzTIi0LEM_XPcqmX0Shbq_YhacNu-TqB1-N1gnB32FBFFBBxMQlTjx-BxzQbok6mzb1QLS_DsYY9fEzESNGfx0sF20EA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Details Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-24">
+<h3 class="text-5xl font-bold tracking-tighter">Inside the Guide.</h3>
+<p class="text-on-surface-variant font-['Inter'] text-[10px] tracking-[0.2em] uppercase mt-4 md:mt-0">Refined Content Hierarchy</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Feature 1 -->
+<div class="p-12 bg-surface-container-low hover:bg-surface-container-high transition-colors duration-500">
+<p class="text-[10px] tracking-widest text-primary font-bold mb-4">CHAPTER 01</p>
+<h4 class="text-xl font-bold mb-4 uppercase tracking-tighter">Material Integrity</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">The tactile resonance of raw concrete, timber, and brushed steel in contemporary environments.</p>
+</div>
+<!-- Feature 2 -->
+<div class="p-12 bg-surface-container-low hover:bg-surface-container-high transition-colors duration-500">
+<p class="text-[10px] tracking-widest text-primary font-bold mb-4">CHAPTER 02</p>
+<h4 class="text-xl font-bold mb-4 uppercase tracking-tighter">Luminous Void</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Harnessing natural light as a structural component to expand and contract perceived space.</p>
+</div>
+<!-- Feature 3 -->
+<div class="p-12 bg-surface-container-low hover:bg-surface-container-high transition-colors duration-500">
+<p class="text-[10px] tracking-widest text-primary font-bold mb-4">CHAPTER 03</p>
+<h4 class="text-xl font-bold mb-4 uppercase tracking-tighter">The Edited Life</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Principles of curation for the personal sanctuary—removing the excess to find the essence.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-32 px-12 bg-primary text-on-primary">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-4xl md:text-6xl font-bold tracking-tighter mb-8">Join the inner circle of the Monograph.</h2>
+<p class="text-on-primary/60 text-lg mb-12 font-light">Receive weekly editorial insights on design, architecture, and intentional living.</p>
+<div class="flex flex-col md:flex-row gap-0">
+<input class="flex-grow bg-transparent border-b border-on-primary/20 p-6 focus:outline-none focus:border-on-primary text-xs tracking-widest placeholder:text-on-primary/30" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="bg-surface-container-lowest text-on-surface px-12 py-6 text-[10px] tracking-widest font-bold uppercase hover:bg-surface-dim transition-colors">Subscribe Now</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-stone-100 dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-screen-2xl mx-auto">
+<div class="text-lg font-bold text-stone-900 dark:text-stone-100 uppercase tracking-tighter mb-8 md:mb-0">CURATOR</div>
+<div class="flex gap-8 mb-8 md:mb-0">
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Privacy</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Terms</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Contact</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-500 hover:text-stone-900 transition-colors" href="#">Instagram</a>
+</div>
+<div class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-500">© 2024 THE CURATOR MONOGRAPH. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+</body></html>

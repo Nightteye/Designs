@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GUIDE.RAW | THE RAW MANIFESTO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Be+Vietnam+Pro:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#00e3fd",
+                        "tertiary-fixed": "#00e3fd",
+                        "inverse-primary": "#fdd400",
+                        "on-primary-fixed-variant": "#645300",
+                        "surface": "#f6f6f6",
+                        "primary-fixed-dim": "#edc600",
+                        "inverse-surface": "#0c0f0f",
+                        "surface-bright": "#f6f6f6",
+                        "surface-tint": "#6d5a00",
+                        "outline-variant": "#acadad",
+                        "primary-dim": "#5f4e00",
+                        "tertiary-dim": "#005863",
+                        "on-surface": "#2d2f2f",
+                        "surface-variant": "#dbdddd",
+                        "tertiary-fixed-dim": "#00d4ec",
+                        "surface-container-low": "#f0f1f1",
+                        "on-error": "#ffefec",
+                        "on-secondary-fixed": "#620061",
+                        "on-primary-fixed": "#433700",
+                        "on-background": "#2d2f2f",
+                        "on-tertiary-fixed": "#003840",
+                        "on-secondary-fixed-variant": "#920091",
+                        "secondary-fixed": "#ffbdf3",
+                        "background": "#f6f6f6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#d8f8ff",
+                        "on-primary-container": "#594a00",
+                        "surface-container": "#e7e8e8",
+                        "on-tertiary-container": "#004d57",
+                        "error-dim": "#b92902",
+                        "secondary-fixed-dim": "#ffa6f3",
+                        "primary": "#6d5a00",
+                        "inverse-on-surface": "#9c9d9d",
+                        "secondary-container": "#ffbdf3",
+                        "outline": "#757777",
+                        "secondary-dim": "#900090",
+                        "surface-container-highest": "#dbdddd",
+                        "on-primary": "#fff2ce",
+                        "primary-fixed": "#fdd400",
+                        "on-secondary-container": "#820082",
+                        "on-secondary": "#ffeef8",
+                        "surface-dim": "#d2d5d5",
+                        "on-surface-variant": "#5a5c5c",
+                        "surface-container-high": "#e1e3e3",
+                        "on-error-container": "#520c00",
+                        "error-container": "#f95630",
+                        "tertiary": "#006571",
+                        "error": "#b02500",
+                        "primary-container": "#fdd400",
+                        "secondary": "#a400a4",
+                        "on-tertiary-fixed-variant": "#005762"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-small {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .slanted {
+            transform: skewX(-6deg);
+        }
+        body {
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-background selection:bg-secondary selection:text-white">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-6 py-4 bg-white dark:bg-zinc-900 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<div class="text-3xl font-black text-black dark:text-white tracking-tighter italic font-headline">GUIDE.RAW</div>
+<nav class="hidden md:flex gap-8">
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-[#a400a4] underline decoration-4 underline-offset-8 hover:bg-[#fdd400] hover:text-black transition-colors duration-100 px-2 py-1" href="#">Explore</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-black dark:text-white hover:bg-[#fdd400] hover:text-black transition-colors duration-100 px-2 py-1" href="#">Tutorials</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-black dark:text-white hover:bg-[#fdd400] hover:text-black transition-colors duration-100 px-2 py-1" href="#">Resources</a>
+<a class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-black dark:text-white hover:bg-[#fdd400] hover:text-black transition-colors duration-100 px-2 py-1" href="#">Pricing</a>
+</nav>
+<button class="bg-primary-container text-black border-4 border-black px-6 py-2 font-headline font-bold uppercase neo-shadow-small active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+            Get Started
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col items-center justify-center px-6 py-20 overflow-hidden border-b-4 border-black">
+<div class="absolute inset-0 z-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="relative z-10 text-center max-w-6xl w-full">
+<div class="inline-block bg-secondary text-on-secondary px-4 py-1 border-4 border-black mb-8 slanted neo-shadow-small font-headline font-black uppercase tracking-widest">
+                    THE RAW MANIFESTO
+                </div>
+<h1 class="font-headline font-black text-6xl md:text-[120px] leading-[0.9] text-black mb-12 uppercase tracking-tighter slanted">
+                    THE RAW GUIDE <br/> TO <span class="bg-primary-container px-4 border-4 border-black">EVERYTHING</span>
+</h1>
+<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+<button class="w-full md:w-auto bg-primary-container text-black border-4 border-black px-10 py-6 text-2xl font-headline font-black uppercase neo-shadow active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-white">
+                        Get Started Now
+                    </button>
+<button class="w-full md:w-auto bg-white text-black border-4 border-black px-10 py-6 text-2xl font-headline font-black uppercase neo-shadow active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all hover:bg-secondary hover:text-white">
+                        Download Guide
+                    </button>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="hidden lg:block absolute top-20 left-10 w-40 h-40 border-4 border-black bg-tertiary-container neo-shadow-small slanted"></div>
+<div class="hidden lg:block absolute bottom-20 right-10 w-60 h-60 border-4 border-black overflow-hidden neo-shadow">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="High contrast black and white abstract geometric architecture with sharp shadows and brutalist textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ1dEejn7Nr9kDlyAMh3DutBuYozPEnEhkS9DmURkrTD63QZhhfQNDeeuaDAZJo99scV9h-pUoTfzBOm6B979hB1Dck5vsP2EzEY7tXBdxtqmiiUt7mi8OU7b9IwvRBmMT2QIfNR0_C7akzVKTQtUDfbyW-mqEUA6klnSVTvpKggkrs1pxJ_VbfwDLhe46ZtXrq6a9Il9N3__tdlxSjYiR1Q3TlM1aucgNnvL0cHcs-UHTrx9kcnf1KAA6Frs05FLdJIGp0LhcTU4"/>
+</div>
+</section>
+<!-- Bento Grid Benefits -->
+<section class="bg-surface py-24 px-6 max-w-7xl mx-auto">
+<h2 class="font-headline font-black text-5xl uppercase mb-16 text-center slanted">WHY WE ARE DIFFERENT</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white border-4 border-black p-8 neo-shadow flex flex-col justify-between min-h-[350px]">
+<div>
+<div class="bg-black text-white w-16 h-16 flex items-center justify-center mb-6 border-4 border-black">
+<span class="material-symbols-outlined text-4xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h3 class="font-headline font-black text-3xl uppercase mb-4">No Bullshit</h3>
+<p class="font-body text-lg font-medium leading-relaxed">
+                            Straight to the point. No corporate jargon. No fluff. Just the raw intelligence you need to actually ship.
+                        </p>
+</div>
+<div class="pt-6 mt-6 border-t-4 border-black">
+<span class="font-headline font-black text-xl uppercase italic">ACTION ORIENTED</span>
+</div>
+</div>
+<!-- Card 2 (Highlight) -->
+<div class="bg-primary-container border-4 border-black p-8 neo-shadow flex flex-col justify-between min-h-[350px] md:scale-105 z-10">
+<div>
+<div class="bg-white text-black w-16 h-16 flex items-center justify-center mb-6 border-4 border-black">
+<span class="material-symbols-outlined text-4xl" data-icon="diamond">diamond</span>
+</div>
+<h3 class="font-headline font-black text-3xl uppercase mb-4">Pure Value</h3>
+<p class="font-body text-lg font-bold leading-relaxed">
+                            Every chapter is a tactical advantage. We've compressed 10 years of brutal industry experience into one manual.
+                        </p>
+</div>
+<div class="pt-6 mt-6 border-t-4 border-black">
+<span class="font-headline font-black text-xl uppercase italic">MAXIMUM DENSITY</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-secondary-container border-4 border-black p-8 neo-shadow flex flex-col justify-between min-h-[350px]">
+<div>
+<div class="bg-black text-white w-16 h-16 flex items-center justify-center mb-6 border-4 border-black">
+<span class="material-symbols-outlined text-4xl" data-icon="construction">construction</span>
+</div>
+<h3 class="font-headline font-black text-3xl uppercase mb-4">Ready to Build</h3>
+<p class="font-body text-lg font-medium leading-relaxed">
+                            Templates, frameworks, and checklists included. Stop planning and start executing immediately.
+                        </p>
+</div>
+<div class="pt-6 mt-6 border-t-4 border-black">
+<span class="font-headline font-black text-xl uppercase italic">TOOLS PROVIDED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Manifesto Strip -->
+<section class="bg-black text-white py-12 border-y-4 border-black overflow-hidden whitespace-nowrap">
+<div class="flex animate-[marquee_20s_linear_infinite] gap-12 text-4xl font-headline font-black uppercase italic tracking-tighter">
+<span>The Raw Manifesto</span> <span>•</span>
+<span>Reject Average</span> <span>•</span>
+<span>Build Harder</span> <span>•</span>
+<span>The Raw Manifesto</span> <span>•</span>
+<span>Reject Average</span> <span>•</span>
+<span>Build Harder</span> <span>•</span>
+<span>The Raw Manifesto</span> <span>•</span>
+<span>Reject Average</span> <span>•</span>
+<span>Build Harder</span> <span>•</span>
+<span>The Raw Manifesto</span> <span>•</span>
+<span>Reject Average</span> <span>•</span>
+<span>Build Harder</span> <span>•</span>
+</div>
+<style>
+                @keyframes marquee {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-50%); }
+                }
+            </style>
+</section>
+<!-- Featured Section -->
+<section class="py-24 px-6 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<div class="border-8 border-black neo-shadow slanted relative">
+<img class="w-full h-full object-cover" data-alt="Vibrant neon digital landscape with retro-futuristic grid and bright magenta lighting accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-nbhG_vmYPgFn3lfNrR-qwItdmFodH45v_4-hdh295gHewAW_8jncM_9I1mFqhlgiAZlvHgAe4Sle_zOj7ItRZXjfkcFRewVPSGcREP0JpZE3WMzwRZt_YWgubaoBgGQjBuz2iEbqF0Ei4NlUWmdGRGoHM4VabYFC4OyNieBPcknB-FEBADvRoyqYIjCGlIdeV6M1VDeTJMh8p-yEzb50YhnQMB3EtYb3NHkiBUdI0ovb1Yk_sMyzwCMYX_F3zX5U2ECikvU_vd8"/>
+<div class="absolute -bottom-10 -left-10 bg-tertiary-container border-4 border-black p-6 neo-shadow-small font-headline font-black text-2xl uppercase">
+                            01. FUNDAMENTALS
+                        </div>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="font-headline font-black text-5xl uppercase mb-8 leading-tight">MASTER THE <br/>FOUNDATION</h2>
+<p class="font-body text-xl mb-8 leading-relaxed">
+                        Don't build on sand. We break down the core mechanics of branding, design, and growth in a way that respects your time and intelligence. No theories, just physics.
+                    </p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-4 text-xl font-headline font-bold uppercase">
+<span class="material-symbols-outlined text-secondary font-black" data-icon="check_circle">check_circle</span>
+                            Architectural Soundness
+                        </li>
+<li class="flex items-center gap-4 text-xl font-headline font-bold uppercase">
+<span class="material-symbols-outlined text-secondary font-black" data-icon="check_circle">check_circle</span>
+                            Visual Hierarchy Laws
+                        </li>
+<li class="flex items-center gap-4 text-xl font-headline font-bold uppercase">
+<span class="material-symbols-outlined text-secondary font-black" data-icon="check_circle">check_circle</span>
+                            Conversion Psych 101
+                        </li>
+</ul>
+<button class="bg-black text-white border-4 border-black px-12 py-4 font-headline font-black uppercase text-xl neo-shadow-small hover:bg-primary-container hover:text-black transition-all">
+                        View Sample Chapter
+                    </button>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="bg-[#fdd400] py-32 px-6 text-center border-y-4 border-black">
+<h2 class="font-headline font-black text-6xl md:text-8xl uppercase mb-12 tracking-tighter slanted">TIME TO GET <br/>UNCOMFORTABLE.</h2>
+<p class="font-headline font-bold text-2xl uppercase max-w-2xl mx-auto mb-16 italic">Comfort is the enemy of craft. Join 5,000+ builders who decided to go raw.</p>
+<div class="max-w-xl mx-auto bg-white border-4 border-black p-2 flex flex-col md:flex-row neo-shadow">
+<input class="flex-grow border-none focus:ring-0 font-headline font-bold uppercase p-4 text-xl placeholder:text-black/30" placeholder="YOUR_EMAIL@RAW.COM" type="email"/>
+<button class="bg-black text-white px-10 py-4 font-headline font-black uppercase text-xl active:bg-secondary transition-colors">
+                    Join Waitlist
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 gap-8 bg-[#fdd400] text-black border-t-4 border-black">
+<div class="flex flex-col gap-2">
+<div class="text-xl font-black text-black font-headline">GUIDE.RAW</div>
+<p class="font-['Be_Vietnam_Pro'] font-bold uppercase text-xs">© 2024 THE RAW MANIFESTO. NO RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-['Be_Vietnam_Pro'] font-bold uppercase text-xs text-black underline hover:text-black hover:bg-white transition-all px-1" href="#">Privacy</a>
+<a class="font-['Be_Vietnam_Pro'] font-bold uppercase text-xs text-black/70 hover:text-black hover:bg-white transition-all px-1" href="#">Terms</a>
+<a class="font-['Be_Vietnam_Pro'] font-bold uppercase text-xs text-black/70 hover:text-black hover:bg-white transition-all px-1" href="#">Github</a>
+<a class="font-['Be_Vietnam_Pro'] font-bold uppercase text-xs text-black/70 hover:text-black hover:bg-white transition-all px-1" href="#">Contact</a>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 border-2 border-black flex items-center justify-center bg-white neo-shadow-small active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</button>
+<button class="w-10 h-10 border-2 border-black flex items-center justify-center bg-white neo-shadow-small active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+</button>
+</div>
+</footer>
+</body></html>

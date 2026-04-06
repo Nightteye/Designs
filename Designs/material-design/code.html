@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#2f323a",
+                    "surface": "#f9f9fe",
+                    "on-tertiary-container": "#50426b",
+                    "on-tertiary-fixed": "#3c2f56",
+                    "secondary": "#565f72",
+                    "primary-fixed-dim": "#a5bfef",
+                    "on-primary-container": "#2a446d",
+                    "inverse-primary": "#b3cdfe",
+                    "outline-variant": "#afb2bc",
+                    "primary": "#46608a",
+                    "inverse-surface": "#0c0e12",
+                    "background": "#f9f9fe",
+                    "surface-container-highest": "#e0e2ec",
+                    "on-tertiary": "#fef7ff",
+                    "secondary-container": "#d9e3f9",
+                    "surface-bright": "#f9f9fe",
+                    "surface-dim": "#d7dae4",
+                    "on-primary": "#f8f8ff",
+                    "on-background": "#2f323a",
+                    "secondary-fixed-dim": "#cbd4ea",
+                    "on-tertiary-fixed-variant": "#594b74",
+                    "on-primary-fixed-variant": "#334d77",
+                    "primary-fixed": "#b3cdfe",
+                    "on-secondary-fixed-variant": "#535c6e",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#9c9ca2",
+                    "secondary-fixed": "#d9e3f9",
+                    "tertiary-dim": "#5a4c75",
+                    "outline": "#777b84",
+                    "error-dim": "#67040d",
+                    "surface-variant": "#e0e2ec",
+                    "on-error-container": "#6e0a12",
+                    "tertiary": "#665882",
+                    "tertiary-fixed": "#deccfd",
+                    "error": "#a83836",
+                    "primary-container": "#b3cdfe",
+                    "surface-container-high": "#e6e8f1",
+                    "tertiary-fixed-dim": "#d0beef",
+                    "surface-tint": "#46608a",
+                    "tertiary-container": "#deccfd",
+                    "surface-container-low": "#f3f3fa",
+                    "primary-dim": "#3a537d",
+                    "secondary-dim": "#4a5365",
+                    "on-secondary-fixed": "#364051",
+                    "on-secondary-container": "#495264",
+                    "surface-container": "#ecedf6",
+                    "on-error": "#fff7f6",
+                    "error-container": "#fa746f",
+                    "on-secondary": "#f8f8ff",
+                    "on-primary-fixed": "#133058",
+                    "on-surface-variant": "#5c5f68"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/60 dark:bg-slate-950/60 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-[#2f323a] dark:text-white tracking-tighter">
+                ProGuide
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-Inter text-body-lg tracking-tight text-[#5c5f68] dark:text-slate-400 hover:text-[#2f323a] dark:hover:text-white transition-opacity duration-300" href="#">Resources</a>
+<a class="font-Inter text-body-lg tracking-tight text-[#5c5f68] dark:text-slate-400 hover:text-[#2f323a] dark:hover:text-white transition-opacity duration-300" href="#">Case Studies</a>
+<a class="font-Inter text-body-lg tracking-tight text-[#5c5f68] dark:text-slate-400 hover:text-[#2f323a] dark:hover:text-white transition-opacity duration-300" href="#">Pricing</a>
+<a class="font-Inter text-body-lg tracking-tight text-[#5c5f68] dark:text-slate-400 hover:text-[#2f323a] dark:hover:text-white transition-opacity duration-300" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-dim text-on-primary px-6 py-2 rounded-xl font-semibold scale-95 transition-transform duration-200 hover:opacity-80">
+                    Get Started
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center w-full">
+<!-- Content Left -->
+<div class="md:col-span-6 z-10">
+<span class="font-Inter text-label-sm tracking-widest uppercase text-on-surface-variant mb-6 block">The Premium Guide</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8">
+                        Master the Art of <span class="text-primary">Design</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-lg">
+                        Elevate your professional toolkit with our definitive architectural approach to digital experiences. Learn the nuances of tonal depth and structural integrity.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+<button class="px-8 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-xl font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all">
+                            Get Started
+                        </button>
+<button class="px-8 py-4 bg-secondary-container text-on-secondary-container rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity">
+                            View Curriculum
+                        </button>
+</div>
+<!-- Signature Instructional Inset -->
+<div class="mt-12 p-6 bg-tertiary-container rounded-xl border-l-4 border-tertiary relative overflow-hidden">
+<div class="relative z-10 flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary shrink-0">lightbulb</span>
+<div class="space-y-1">
+<span class="text-on-tertiary-container font-bold block">Pro Insight</span>
+<p class="text-on-tertiary-container text-sm leading-snug">Design is not just what it looks like; it's the invisible friction you remove for your users.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Right (Asymmetric) -->
+<div class="md:col-span-6 relative h-[500px] md:h-[600px] flex items-center justify-center">
+<!-- Decorative background shift -->
+<div class="absolute inset-0 bg-surface-container-low rounded-[4rem] rotate-3 -z-10"></div>
+<div class="absolute inset-0 bg-primary/5 rounded-[4rem] -rotate-2 -z-20"></div>
+<div class="w-full h-[450px] md:h-[550px] bg-white rounded-xl overflow-hidden shadow-2xl relative group">
+<img alt="Master Design Guide" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sophisticated modern architectural workspace with minimalist furniture, large windows showing a city skyline, and a laptop on a clean desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6q4X2rPZijgGNodRAibRomc3oYiqp_x9xtDuu4U4o0PjinqyWI7bi6ooWH655kKlhaK6yEh3XxYqq5h_t5BqF0lprUGWAJZjjaRIte16T0Tf2bDh3eDReqmSDL7fe18GG_UP280Kng6G4l9G4oKFN6r3zlvgK3Hx3Ux-MKkfY3dwIWVZlsuLixetuJg-M9tvy8DR0AQ0C-DOyw5Mct0aY3IFSoqiRNyXH5MguzqctC1UGBz0FjCoQj762Zc5HDskIdI2JXkQLRcCz"/>
+<!-- Glassmorphism Overlay Card -->
+<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface/60 backdrop-blur-xl rounded-xl border border-white/20">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold tracking-widest uppercase text-primary">Live Course</span>
+<span class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-[16px] mr-1">group</span> 2.4k Students
+                                </span>
+</div>
+<h3 class="text-on-surface font-bold text-lg mb-1">Architecture of UI Systems</h3>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant ml-2">4.9/5</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Feature Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="font-Inter text-label-sm tracking-widest uppercase text-on-surface-variant block mb-2">Curriculum Highlights</span>
+<h2 class="font-headline text-4xl font-bold text-on-surface tracking-tight">Built for modern creators.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 min-h-[600px]">
+<!-- Large Feature -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between hover:translate-y-[-4px] transition-transform duration-300">
+<div>
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">architecture</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Structural Principles</h3>
+<p class="text-on-surface-variant leading-relaxed">Deep dive into spatial relationships, grid mathematics, and the psychology of visual hierarchy in modern digital layouts.</p>
+</div>
+<div class="mt-8 rounded-lg overflow-hidden h-48">
+<img alt="Grid and Layouts" class="w-full h-full object-cover" data-alt="abstract geometric 3D patterns with clean lines and soft blue and grey shadows illustrating structure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfwAn5v_XB-fZoNog80tJgdL1RK-i_EqmT-Vw6cGFOrV7b7AZhH3zsEK31tFoFuqqg8OlL16MpzNKGSZoMa3RBda5yQk9Jp4HFzw4QH556HPHvWfrpqY5G3kliND6-_qbiH4DCqt4dhRs6vsDfK62eZFVOlzMGMEbObrKEg6XtEW7X4hyIEWnKd2MyoF_VF_xTojQkUmKiXHtBF0WdvrdQTW8PHRugWHihJwpIDGgFDQQ_WunWqf1uzxPah7pJTRIWSZZvWnS-DF4c"/>
+</div>
+</div>
+<!-- Medium Feature -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container-lowest p-8 rounded-xl flex items-center gap-8 hover:translate-y-[-4px] transition-transform duration-300">
+<div class="flex-1">
+<h3 class="text-xl font-bold mb-2">Color Theory</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Master the art of tonal layering and accessibility without sacrificing aesthetic beauty.</p>
+</div>
+<div class="w-32 h-32 bg-primary-container rounded-full overflow-hidden shrink-0">
+<img alt="Color Palette" class="w-full h-full object-cover" data-alt="macro close-up of vibrant fluid color paints mixing in soft blue and violet tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwdSlYy4xHdLGelyT_F7mI7odYWAoUYknlVPFKBLmQ7SHpGinWWBGEHjOGmbmyTExb3PCG774nwp7nkEsh_q_U8tdg6WHFIVbmVirX4eK4IYY1USrOHcKHQ_gBhGZ3casDAUNYVRJwrcBTdOP-xKRF4M4XCoIihcgt7PHe6VtihmQzApYqZp0EbOM_p_VBfYxBY_eEXVQRuFo6Fr7cwDqrGUhlZ-h2lQQUQqC_UcyTCuOPOwoZLFN2yvX8TThW0n2v4MoHB4OEbEBO"/>
+</div>
+</div>
+<!-- Small Feature 1 -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-10 h-10 bg-secondary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container">custom_typography</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Type Mastery</h4>
+<p class="text-xs text-on-surface-variant mt-2">Scale and rhythm in editorial design.</p>
+</div>
+</div>
+<!-- Small Feature 2 -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-10 h-10 bg-tertiary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">motion_photos_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg">Micro-Motion</h4>
+<p class="text-xs text-on-surface-variant mt-2">Delighting users through subtle intent.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Canvas -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="bg-primary-container p-12 md:p-20 rounded-[3rem] relative overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-primary-dim opacity-20 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 bg-tertiary opacity-20 rounded-full blur-3xl"></div>
+<div class="relative z-10 text-center max-w-2xl mx-auto">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-on-primary-container mb-6 tracking-tight">Ready to transform your creative process?</h2>
+<p class="text-on-primary-container text-lg mb-10 opacity-90">Join over 10,000 designers and architects who have already started their journey with ProGuide.</p>
+<button class="bg-on-primary-container text-surface px-10 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all">
+                        Get Started Now
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-[#f3f3fa] dark:bg-slate-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 w-full max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-black text-[#2f323a] dark:text-white mb-2">ProGuide</div>
+<p class="font-Inter text-label-sm tracking-widest uppercase text-[#5c5f68] dark:text-slate-500">© 2024 Architectural Gallery. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-Inter text-label-sm tracking-widest uppercase text-[#5c5f68] dark:text-slate-500 hover:text-[#46608a] dark:hover:text-blue-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-Inter text-label-sm tracking-widest uppercase text-[#5c5f68] dark:text-slate-500 hover:text-[#46608a] dark:hover:text-blue-300 transition-colors" href="#">Terms of Service</a>
+<a class="font-Inter text-label-sm tracking-widest uppercase text-[#5c5f68] dark:text-slate-500 hover:text-[#46608a] dark:hover:text-blue-300 transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
