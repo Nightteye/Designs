@@ -14,21 +14,21 @@
 > Where to find designs?
 > - You can choose your own designs. 
 > - Here are all the Designs you can use:
-> - Neubrutalism
-> - Minimalism
-> - Material Design
-> - Flat Design
-> - Skeuomorphism
-> - Brutalism
-> - Neumorphism
-> - Glassmorphism
-> - Liquid Glass
+> - [Neubrutalism](./Designs/neubrutalism/)
+> - [Minimalism](./Designs/minimalism/)
+> - [Material Design](./Designs/material-design/)
+> - [Flat Design](./Designs/flat-design/)
+> - [Skeuomorphism](./Designs/skeuomorphism/)
+> - [Brutalism](./Designs/brutalism/)
+> - [Neumorphism](./Designs/neumorphism/)
+> - [Glassmorphism](./Designs/glassmorphism/)
+> - [Liquid Glass](./Designs/liquid-glass/)
 > - etc.
 
-> You can also find designs on Dribbble, Behance, Pinterest, etc.
-> - dribble.com
-> - behance.net
-> - pinterest.com
+> You can also find designs on websites like:
+> - [Dribbble](https://dribbble.com)
+> - [Behance](https://www.behance.net)
+> - [Pinterest](https://www.pinterest.com)
 
 > Once you find a design that you like, try to analyze it and understand how it works.
 > - What are the colors used?
@@ -44,8 +44,7 @@
 > - What are the accessibility features used?
 
 > Once you understand the design, try to create a wireframe or a mockup of your website.
-> - You can use tools like Figma, Sketch, Adobe XD,Google Stitch etc. to create your wireframe or mockup.
-> - figma.com, sketch.com, adobexdplatform.com, stitch.withgoogle.com
+> - You can use tools like [Figma](https://www.figma.com/), [Sketch](https://www.sketch.com/), [Adobe XD](https://adobexdplatform.com/), [Google Stitch](https://stitch.withgoogle.com/) etc. to create your wireframe or mockup.
 > - You can also use pen and paper to create your wireframe or mockup.
 
 ## Setting up your development environment
