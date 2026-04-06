@@ -24,16 +24,16 @@ You can check out the [Vibe Coding 101](VIBE-CODING-101.md) guide for a step-by-
 - **My own Brain**: I rely on my own knowledge and experience in coding and web development, and I use AI tools as a supplement to my skills and knowledge, not as a replacement. I always make sure to understand the code and the logic behind it before using it in my projects.
 
 # FRAMEWORKS AND LIBRARIES
-- **Frontend Framework**: React for building the user interface and components of the website.
-- **Styling**: Tailwind CSS for styling the website and making it responsive.
-- **State Management**: React Context API for managing the state of the application.
-- **Routing**: React Router for handling navigation and routing in the website.
-- **Testing**: Jest and React Testing Library for testing the components and functionality of the website.
-- **Deployment**: Vercel for deploying the website and making it live on the internet.
-- **Animation Library**: Framer Motion for adding animations and transitions to the website.
-- **Email Service**: EmailJS/Resend for handling contact form submissions and sending emails from the website.
-- **Icons**: React Icons for adding icons to the website.
-- **3D Library**: Three.js for adding 3D elements and animations to the website (optional).
+- **Frontend Framework**: [React](https://react.dev/) for building the user interface and components of the website.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) for styling the website and making it responsive.
+- **State Management**: [React Context API](https://react.dev/reference/react/useContext) for managing the state of the application.
+- **Routing**: [React Router](https://reactrouter.com/) for handling navigation and routing in the website.
+- **Testing**: [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing the components and functionality of the website.
+- **Deployment**: [Vercel](https://vercel.com/) for deploying the website and making it live on the internet.
+- **Animation Library**: [Framer Motion](https://www.npmjs.com/package/framer-motion) for adding animations and transitions to the website.
+- **Email Service**: [EmailJS](https://www.emailjs.com/)/[Resend](https://resend.com/) for handling contact form submissions and sending emails from the website.
+- **Icons**: [Lucide Icon](https://lucide.dev/icons/) for adding icons to the website.
+- **3D Library**: [Three.js](https://threejs.org/) for adding 3D elements and animations to the website (optional).
 
 > [!NOTE] 
 > About 3D elements, Adding 3D elements is not at all easy, it requires a lot of knowledge and experience in 3D modeling and animation, as well as a good understanding of the Three.js library. If you're new to coding and web development, I would recommend starting with the basics and then gradually learning about 3D elements and how to implement them in your projects. You can also use pre-made 3D models and animations from websites like [Sketchfab](https://sketchfab.com/) or [TurboSquid](https://www.turbosquid.com/), and then integrate them into your website using Three.js.
