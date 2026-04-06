@@ -314,6 +314,7 @@ After Chapter 5, unpin and let page continue scrolling normally.
 Generate the complete, fully working code for all files. Do not abbreviate or use 
 placeholder comments — write every component in full.
 ```
+---
 
 > [!NOTE]
 > This was just the initial prompt to guide the AI to generate the website, to see the whole chat you can use this [link](https://claude.ai/share/e9f67e3b-2e5b-489f-aad0-3dcf86e59876). Once you get the initial code, start adding components and features one by one. Don't try to do everything at once, this will help you to focus on one thing at a time and also make it easier to debug and test your code. 
