@@ -190,10 +190,62 @@ export default defineConfig({
 
 ---
 
-## Planning Folder Structure 
+## Planning Folder Structure [Edited by AI]
 
+- Before starting to code, it's important to plan your folder structure. This will help you to keep your code organized and maintainable. A good folder structure will also make it easier for you to find and update your code in the future. A common folder structure for a React project looks like this:
+```my-react-app/ 
+├── node_modules/
+├── public/ <-- This is where you can put your static assets like images, fonts, etc.>
+├── src/
+│   ├── components/ <-- This is where you can create your reusable components. You
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── ... <-- You can create as many components as you need and import them in your App.jsx file.>
+│   ├── Pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Privacy.jsx
+│   │   └── ... <-- You can create as many pages as you need and import them in your App.jsx file.>
+│   ├── App.jsx <-- This is the main component of your website. You can import all your components and pages here and render them.>
+│   ├── index.css <-- This is where you can import your Tailwind CSS styles. You can also add your custom styles here.>
+│   └── main.jsx <-- This is the entry point of your application. It renders the App component to the DOM.>
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js <-- This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.>
+└── README.md
+```
+- This is just a basic folder structure, you can modify it according to your needs and preferences. The important thing is to keep your code organized and maintainable. You can create separate folders for components, pages, styles, assets, etc. to keep everything organized.
 
-> Always keep the folder structure organized and clean. This will help you and others understand the code better and make it easier to maintain and update in the future. You can create separate folders for components, styles, assets, etc. to keep everything organized. 
+- Always keep the folder structure organized and clean. This will help you and others understand the code better and make it easier to maintain and update in the future. You can create separate folders for components, styles, assets, etc. to keep everything organized. 
+
+---
+
+## Setting up CSS Variables [Edited by AI]
+
+- It's a good practice to use CSS variables for your colors, fonts, and other design tokens. This will make it easier to maintain and update your styles in the future. You can define your CSS variables in your index.css file like this:
+```css
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+}
+```
+- You can then use these CSS variables in your components and styles like this:
+```jsx
+<div style={{ backgroundColor: 'var(--primary-color)' }}>
+  This is a styled component.
+</div>
+```
+- This will make it easier to maintain and update your styles in the future. If you want to change the primary color, you can just update the CSS variable in one place and it will be reflected throughout your website.
+
+---
+
+> [!TIP]
+> Always build top to bottom, start with the Hero Section, then the Navbar, then the About Section, and finally the Footer. This will help you to focus on one section at a time and make it easier to debug and test your code.
 
 > [!TIP]
 > After the basic website is ready, immediately push it to Github. This will help you keep track of your changes and also allow you to have version control for you project. This would help you to revert back to previous version if something goes wrong. If you're working in a team, this will allow you to share your code with other and add them as collaborators to your repository. You can also use GitHub Pages to host your website for free.
