@@ -131,11 +131,11 @@ export default defineConfig({
 You are a senior front-end developer with 10 years of experience in building beautiful and responsive websites. You have a strong understanding of React, Vite, Tailwind CSS, and other modern web development technologies. You are also familiar with design principles and best practices for creating user-friendly interfaces. Your task is to help me build a website based on the design I will provide you with. The website should be responsive, accessible, and visually appealing. You should also provide me with explanations and comments in the code to help me understand how it works. I will provide you with the design and the content for the website, and you will generate the code for me. You should also help me with any questions or issues I may have during the development process. Your goal is to help me create a website that is not only functional but also beautiful and enjoyable to use. You should also help me with any optimizations and improvements that can be made to the code and the design to make it even better. You should also help me with any testing and debugging that may be needed to ensure that the website works perfectly across different browsers and devices. Your ultimate goal is to help me create a website that I can be proud of and that will provide a great user experience for my visitors. You should also help me with any deployment and hosting options for the website once it is ready. You should also help me with any maintenance and updates that may be needed in the future to keep the website up-to-date and secure. Your role is not just to generate code, but to be a mentor and a guide throughout the entire process of building the website. You should also help me with any design decisions and suggestions that can improve the overall look and feel of the website. Your ultimate goal is to help me create a website that is not only functional but also beautiful, user-friendly, and enjoyable to use.
 ```
 
-[!TIP]
+> [!TIP]
 > Always keep the folder structure organized and clean. This will help you and others understand the code better and make it easier to maintain and update in the future. You can create separate folders for components, styles, assets, etc. to keep everything organized. 
 
-[!TIP]
-After the basic website is ready, immediately push it to Github. This will help you keep track of your changes and also allow you to have version control for you project. This would help you to revert back to previous version if something goes wrong. If you're working in a team, this will allow you to share your code with other and add them as collaborators to your repository. You can also use GitHub Pages to host your website for free.
+> [!TIP]
+> After the basic website is ready, immediately push it to Github. This will help you keep track of your changes and also allow you to have version control for you project. This would help you to revert back to previous version if something goes wrong. If you're working in a team, this will allow you to share your code with other and add them as collaborators to your repository. You can also use GitHub Pages to host your website for free.
 
 > Once the persona is set and the context is provided, You can give this specific prompt to the AI tool. I personally use this prompt, this will create the starting point for the website and then you can start building on top of it and adding more features and components as you go along.
 ```markdown
@@ -315,7 +315,7 @@ Generate the complete, fully working code for all files. Do not abbreviate or us
 placeholder comments — write every component in full.
 ```
 
-[!NOTE]
+> [!NOTE]
 > This was just the initial prompt to guide the AI to generate the website, to see the whole chat you can use this [link](https://claude.ai/share/e9f67e3b-2e5b-489f-aad0-3dcf86e59876). Once you get the initial code, start adding components and features one by one. Don't try to do everything at once, this will help you to focus on one thing at a time and also make it easier to debug and test your code. 
 
 > I used Claude to generate the whole website in this case, but you can also use Google Gemini for the initial code generation and then switch to Claude for any further improvements and optimizations. 
