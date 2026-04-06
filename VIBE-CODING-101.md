@@ -109,5 +109,17 @@ export default defineConfig({
 })
 ```
 
-# Now we have everything set up and we acn start coding the website. 
-
+> Now the dependecies are installed and the folder structure is ready. The folder structure should look like this:
+```my-react-app/
+├── node_modules/
+├── public/
+├── src/ 
+│   ├── App.jsx <-- This the the main component of your website. You can create other components and import them here.>
+│   ├── index.css <-- This is where you can import your Tailwind CSS styles. You can also add your custom styles here.>
+│   └── main.jsx <-- This is the entry point of your application. It renders the App component to the DOM.>
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js <-- This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.>
+└── README.md
+```
