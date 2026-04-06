@@ -5,7 +5,7 @@ A collection of resources and tips for learning how to code and build websites. 
 ---
 
 > [!NOTE]
-> This is just a guide which I have made on my personal learning journey. This may not be the most efficient guide to vibe code — maybe you can have a better approach to learn and vibe code — but this is what worked for me and I hope it will be helpful for you as well.
+> This is just a guide which I have made on my personal learning journey. This may not be the most efficient guide to vibe code, maybe you can have a better approach to learn and vibe code, but this is what worked for me and I hope it will be helpful for you as well.
 >
 > I don't claim to be an expert in coding or web development, I'm just sharing my experience and the resources that I found helpful in my learning journey. I don't use any Vibe Coding tools like Cursor or WindSurf/Antigravity. I use VS Code and use AI Tools for the code generation and improvements. I also code on my own knowledge and experience; I don't rely solely on AI tools for coding. I use AI tools as a supplement to my coding skills and knowledge, not as a replacement.
 >
