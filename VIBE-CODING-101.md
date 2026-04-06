@@ -386,5 +386,6 @@ placeholder comments — write every component in full.
 
 
 
-
+>[!NOTE]
+> The guide has not been fully completed yet, I will be adding more sections and tips as I go along. If you have any suggestions or resources that you think would be helpful, please feel free to share them with me.
 
