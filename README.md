@@ -35,6 +35,8 @@ You can check out the [Vibe Coding 101](VIBE-CODING-101.md) guide for a step-by-
 - **Icons**: [Lucide Icon](https://lucide.dev/icons/) for adding icons to the website.
 - **3D Library**: [Three.js](https://threejs.org/) for adding 3D elements and animations to the website (optional).
 
+---
+
 > [!NOTE] 
 > About 3D elements, Adding 3D elements is not at all easy, it requires a lot of knowledge and experience in 3D modeling and animation, as well as a good understanding of the Three.js library. If you're new to coding and web development, I would recommend starting with the basics and then gradually learning about 3D elements and how to implement them in your projects. You can also use pre-made 3D models and animations from websites like [Sketchfab](https://sketchfab.com/) or [TurboSquid](https://www.turbosquid.com/), and then integrate them into your website using Three.js.
 
