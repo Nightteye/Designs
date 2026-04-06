@@ -227,11 +227,11 @@ export default defineConfig({
 
 - It's a good practice to use CSS variables for your colors, fonts, and other design tokens. This will make it easier to maintain and update your styles in the future. You can define your CSS variables in your index.css file like this:
 ```css
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
 }
 ```
 - You can then use these CSS variables in your components and styles like this:
