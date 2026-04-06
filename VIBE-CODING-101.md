@@ -138,6 +138,8 @@ You are a senior front-end developer with 10 years of experience in building bea
 > After the basic website is ready, immediately push it to Github. This will help you keep track of your changes and also allow you to have version control for you project. This would help you to revert back to previous version if something goes wrong. If you're working in a team, this will allow you to share your code with other and add them as collaborators to your repository. You can also use GitHub Pages to host your website for free.
 
 > Once the persona is set and the context is provided, You can give this specific prompt to the AI tool. I personally use this prompt, this will create the starting point for the website and then you can start building on top of it and adding more features and components as you go along.
+
+This is my own website which I've built with Claude. You can check it out here: [Nowehere Fast](https://nowhere-fast.vercel.app/)
 ```markdown
 Build a punky, hyper-animated React + Vite website for a travel YouTuber called "NOWHERE FAST" — 
 a solo traveler who ditches comfort zones and documents raw, chaotic, beautiful places around 

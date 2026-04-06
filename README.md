@@ -33,6 +33,13 @@ You can check out the [Vibe Coding 101](VIBE-CODING-101.md) guide for a step-by-
 - **Animation Library**: [Framer Motion](https://www.npmjs.com/package/framer-motion) for adding animations and transitions to the website.
 - **Email Service**: [EmailJS](https://www.emailjs.com/)/[Resend](https://resend.com/) for handling contact form submissions and sending emails from the website.
 - **Icons**: [Lucide Icon](https://lucide.dev/icons/) for adding icons to the website.
+- **Database**: [Supabase](https://supabase.com/) for handling any backend functionality and database management.
+   - [Postgres](https://supabase.com/database)
+   - [Authentication](https://supabase.com/auth)
+   - [Realtime](https://supabase.com/realtime)
+   - [Serverless Functions](https://supabase.com/storage)
+   - [Edge Functions](https://supabase.com/edge-functions)
+   - and many more features that you can use in your projects.
 - **3D Library**: [Three.js](https://threejs.org/) for adding 3D elements and animations to the website (optional).
 
 ---
@@ -45,4 +52,5 @@ You can check out the [Vibe Coding 101](VIBE-CODING-101.md) guide for a step-by-
 [Click here to read the Vibe Coding 101 guide](VIBE-CODING-101.md)
 
 Thanks for reading,
+
 ***Nighteye***
