@@ -1,3 +1,5 @@
+# Vibe Coding 101
+
 # HOW TO VIBE CODE AND CREATE BEAUTIFUL WEBSITES
 > This is a guide to help you vibe code and create beautiful websites. It covers how to make website using React, Vite, Tailwind CSS, as well as some tips and tricks to make your coding experience more enjoyable.
 
