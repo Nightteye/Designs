@@ -9,10 +9,10 @@
 ---
 
 ## Prerequisites
-> Find your niche and research the topic a little to know your competitors.
-> Explore others' websites to get to know what they have to offer
-> Find a gap that they are missing, and try to improve or work on that
-> Find your vibe and stick to it, don't try to copy others, be original and creative
+> - Find your niche and research the topic a little to know your competitors.
+> - Explore others' websites to get to know what they have to offer
+> - Find a gap that they are missing, and try to improve or work on that
+> - Find your vibe and stick to it, don't try to copy others, be original and creative  
 
 ## Designing your website
 > Before even starting a single line of code, explore designs. 
@@ -54,22 +54,22 @@
 
 ## Setting up your development environment
 > Once you have your design ready, it's time to set up your development environment.
-> - You can use any code editor you like, but I recommend using Visual Studio Code.(https://code.visualstudio.com/)
-> - You can also use other code editors like Sublime Text, Atom, etc. but I recommend using Visual Studio Code because of its features and extensions that can help you vibe code and create beautiful websites.
+> - You can use any code editor you like, but I recommend using [Visual Studio Code](https://code.visualstudio.com/).
+> - You can also use other code editors like [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom-editor.cc/), etc. but I recommend using Visual Studio Code because of its features and extensions that can help you vibe code and create beautiful websites.
 
 # Tools and Technologies
-> - React: A JavaScript library for building user interfaces. (https://reactjs.org/)
-> - Vite: A build tool that provides a fast development experience for modern web projects.
-> - Tailwind CSS: A utility-first CSS framework for rapidly building custom user interfaces. (https://tailwindcss.com/)
-> - Git: A version control system to manage your code and collaborate with others. (https://git-scm.com/)
-> - GitHub: A platform for hosting and collaborating on Git repositories. (https://github.com)
-> - Figma: A design tool for creating wireframes, mockups, and prototypes. (https://www.figma.com/)
+> - [React](https://reactjs.org/): A JavaScript library for building user interfaces. 
+> - [Vite](https://vitejs.dev/): A build tool that provides a fast development experience for modern web projects.
+> - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom user interfaces.
+> - [Git](https://git-scm.com/): A version control system to manage your code and collaborate with others.
+> - [GitHub](https://github.com): A platform for hosting and collaborating on Git repositories.
+> - [Figma](https://www.figma.com/): A design tool for creating wireframes, mockups, and prototypes.
 
 ## AI Tools [Edited by AI]
 > - Choose the right AI tools to help you with your coding and design process. Some popular AI tools for web development include:
-> - GitHub Copilot: An AI-powered code completion tool that helps you write code faster and with fewer errors. (https://copilot.github.com/)
-> - Claude by Anthropic: An AI assistant that can help you with coding, design, and other tasks. (https://www.anthropic.com/claude)
-> - Google Gemini AI: A suite of AI tools that can assist you with various aspects of web development, including code generation and design assistance. (https://ai.google.dev/gemini)
+> - [GitHub Copilot](https://copilot.github.com/): An AI-powered code completion tool that helps you write code faster and with fewer errors.
+> - [Claude by Anthropic](https://www.anthropic.com/claude): An AI assistant that can help you with coding, design, and other tasks.
+> - [Google Gemini AI](https://ai.google.dev/gemini): A suite of AI tools that can assist you with various aspects of web development, including code generation and design assistance.
 
 > [!NOTE] 
 > I personally use Google Gemini and Claude. Claude's free tier is not generous, so use it wisely. Google Gemini is more generous and can be used for a variety of tasks, including code generation, design assistance, and more.
@@ -133,7 +133,8 @@ export default defineConfig({
 > Now you can start building your website by creating components and adding styles using Tailwind CSS. You can also use the AI tools to help you with code generation and design assistance as you build your website.
 
 ## Building your website
-> Before starting to code, it's important to give the AI tool(S) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context:
+> Before starting to code, it's important to give the AI tool(s) a persona and a context to work with. This will help the AI tool understand your requirements and generate code that is more relevant to your needs. For example, you can give the AI tool the following persona and context:
+
 ```markdown
 You are a senior front-end developer with 10 years of experience in building beautiful and responsive websites. You have a strong understanding of React, Vite, Tailwind CSS, and other modern web development technologies. You are also familiar with design principles and best practices for creating user-friendly interfaces. Your task is to help me build a website based on the design I will provide you with. The website should be responsive, accessible, and visually appealing. You should also provide me with explanations and comments in the code to help me understand how it works. I will provide you with the design and the content for the website, and you will generate the code for me. You should also help me with any questions or issues I may have during the development process. Your goal is to help me create a website that is not only functional but also beautiful and enjoyable to use. You should also help me with any optimizations and improvements that can be made to the code and the design to make it even better. You should also help me with any testing and debugging that may be needed to ensure that the website works perfectly across different browsers and devices. Your ultimate goal is to help me create a website that I can be proud of and that will provide a great user experience for my visitors. You should also help me with any deployment and hosting options for the website once it is ready. You should also help me with any maintenance and updates that may be needed in the future to keep the website up-to-date and secure. Your role is not just to generate code, but to be a mentor and a guide throughout the entire process of building the website. You should also help me with any design decisions and suggestions that can improve the overall look and feel of the website. Your ultimate goal is to help me create a website that is not only functional but also beautiful, user-friendly, and enjoyable to use.
 ```
