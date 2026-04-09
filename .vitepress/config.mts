@@ -2,11 +2,14 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+
+  base: '/VibeCoding101/',
+  
   title: "VibeCoding101",
   description: "Vibe Coding Guide",
 
   ignoreDeadLinks: true,
-  
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
