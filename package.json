@@ -1,0 +1,28 @@
+{
+  "name": "vibe-coding-101",
+  "version": "1.0.0",
+  "description": "A collection of resources and tips for learning how to code and build websites. Whether you're a beginner or an experienced developer, these resources will help you improve your skills and create amazing projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nightteye/Designs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nightteye/Designs/issues"
+  },
+  "homepage": "https://github.com/Nightteye/Designs#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.32"
+  }
+}

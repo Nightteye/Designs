@@ -1,3 +1,28 @@
+## Table of Contents
+
+1. [HOW TO VIBE CODE AND CREATE BEAUTIFUL WEBSITES](#how-to-vibe-code-and-create-beautiful-websites)
+2. [Prerequisites](#prerequisites)
+3. [Designing your website](#designing-your-website)
+   - Analyzing Designs
+   - Creating Wireframes
+4. [Setting up your development environment](#setting-up-your-development-environment)
+5. [Tools and Technologies](#tools-and-technologies)
+6. [AI Tools](#ai-tools-edited-by-ai)
+7. [Installing dependencies](#installing-dependencies-edited-by-ai)
+8. [Setting up Tailwind CSS](#setting-up-tailwind-css-edited-by-ai)
+9. [Planning Folder Structure](#planning-folder-structure-edited-by-ai)
+10. [Setting up CSS Variables](#setting-up-css-variables-edited-by-ai)
+11. [Building Your Website: Tips & Best Practices](#building-your-website-tips--best-practices)
+12. [Debugging the Website](#debugging-the-website)
+13. [Deploying the Website](#deploying-the-website)
+    - [Steps to Deploy (Vercel)](#steps-to-deploy-vercel)
+    - [Steps to Deploy (Netlify)](#steps-to-deploy-netlify)
+    - [Steps to Deploy (GitHub Pages)](#steps-to-deploy-github-pages)
+14. [🚀 Show Off Your Vibe](#-show-off-your-vibe)
+
+
+---
+
 # Vibe Coding 101
 
 > [!NOTE]
@@ -175,13 +200,13 @@ my-react-app/
 ├── node_modules/
 ├── public/
 ├── src/
-│   ├── App.jsx <-- This the the main component of your website. You can create other components and import them here.>
-│   ├── index.css <-- This is where you can import your Tailwind CSS styles. You can also add your custom styles here.>
-│   └── main.jsx <-- This is the entry point of your application. It renders the App component to the DOM.>
+│   ├── App.jsx  // This the the main component of your website. You can create other components and import them here.
+│   ├── index.css  // This is where you can import your Tailwind CSS styles. You can also add your custom styles here.
+│   └── main.jsx  // This is the entry point of your application. It renders the App component to the DOM.
 ├── .gitignore
 ├── index.html
 ├── package.json
-├── vite.config.js <-- This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.>
+├── vite.config.js // This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.
 └── README.md
 ```
 
@@ -222,26 +247,26 @@ Before starting to code, it's important to plan your folder structure. This will
 ```
 my-react-app/
 ├── node_modules/
-├── public/ <-- This is where you can put your static assets like images, fonts, etc.>
+├── public/ // This is where you can put your static assets like images, fonts, etc.
 ├── src/
-│   ├── components/ <-- This is where you can create your reusable components. You
+│   ├── components/ // This is where you can create your reusable components. You
 │   │   ├── Hero.jsx
 │   │   ├── Navbar.jsx
 │   │   ├── Footer.jsx
-│   │   └── ... <-- You can create as many components as you need and import them in your App.jsx file.>
+│   │   └── ... // You can create as many components as you need and import them in your App.jsx file.
 │   ├── Pages/
 │   │   ├── Home.jsx
 │   │   ├── About.jsx
 │   │   ├── Contact.jsx
 │   │   ├── Privacy.jsx
-│   │   └── ... <-- You can create as many pages as you need and import them in your App.jsx file.>
-│   ├── App.jsx <-- This is the main component of your website. You can import all your components and pages here and render them.>
-│   ├── index.css <-- This is where you can import your Tailwind CSS styles. You can also add your custom styles here.>
-│   └── main.jsx <-- This is the entry point of your application. It renders the App component to the DOM.>
+│   │   └── ... // You can create as many pages as you need and import them in your App.jsx file.
+│   ├── App.jsx // This is the main component of your website. You can import all your components and pages here and render them.
+│   ├── index.css // This is where you can import your Tailwind CSS styles. You can also add your custom styles here.
+│   └── main.jsx // This is the entry point of your application. It renders the App component to the DOM.
 ├── .gitignore
 ├── index.html
 ├── package.json
-├── vite.config.js <-- This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.>
+├── vite.config.js // This is where you configure your Vite plugins and Tailwind CSS is also loaded from here in v4.
 └── README.md
 ```
 
@@ -376,7 +401,7 @@ function Navbar() {
 This will render the `NotFound` component for any routes that do not match the defined routes.
 
 >[!TIP]
-> Use <Link> not <a> to avoid page reloads.
+> Use `<Link>` not `<a>` to avoid page reloads.
 
 ---
 
@@ -556,24 +581,3 @@ Keep building, keep iterating, and keep the vibe alive.
 
 ---
 
-## Table of Contents
-
-1. [HOW TO VIBE CODE AND CREATE BEAUTIFUL WEBSITES](#how-to-vibe-code-and-create-beautiful-websites)
-2. [Prerequisites](#prerequisites)
-3. [Designing your website](#designing-your-website)
-   - Analyzing Designs
-   - Creating Wireframes
-4. [Setting up your development environment](#setting-up-your-development-environment)
-5. [Tools and Technologies](#tools-and-technologies)
-6. [AI Tools](#ai-tools-edited-by-ai)
-7. [Installing dependencies](#installing-dependencies-edited-by-ai)
-8. [Setting up Tailwind CSS](#setting-up-tailwind-css-edited-by-ai)
-9. [Planning Folder Structure](#planning-folder-structure-edited-by-ai)
-10. [Setting up CSS Variables](#setting-up-css-variables-edited-by-ai)
-11. [Building Your Website: Tips & Best Practices](#building-your-website-tips--best-practices)
-12. [Debugging the Website](#debugging-the-website)
-13. [Deploying the Website](#deploying-the-website)
-    - [Steps to Deploy (Vercel)](#steps-to-deploy-vercel)
-    - [Steps to Deploy (Netlify)](#steps-to-deploy-netlify)
-    - [Steps to Deploy (GitHub Pages)](#steps-to-deploy-github-pages)
-14. [🚀 Show Off Your Vibe](#-show-off-your-vibe)
